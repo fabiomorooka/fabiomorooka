@@ -30,7 +30,6 @@ ul {
 /*Informations of the letters in the header*/
 li {
 	color: rgb(240,240,240);
-	font-size: 16px;
 	font-weight: 500;
 	display: inline-block;
 	width:200px;
@@ -41,7 +40,7 @@ li:hover {
 }
 
 nav li{
-	font-size: 15px;
+	font-size: 22.5px;
 	color: 
 	display: inline-block;
 	width: 200px;
