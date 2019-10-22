@@ -35,16 +35,20 @@ li {
 	width:200px;
 }
 
-li:hover {
-  color: #DBE9EE;
-}
-
 nav li{
 	font-size: 22.5px;
-	color: 
 	display: inline-block;
 	width: 200px;
  }
+
+ a{
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover{
+  color: blue;
+}
 
  .header_links{
  	position: absolute;
