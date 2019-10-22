@@ -7,11 +7,14 @@
 	width: auto;
 	display: grid;
 	grid-template-columns: 10% 1fr 1fr 1fr 1fr 1fr 1fr 10%;
-	grid-template-rows: 75px 1fr 1fr 1fr 1fr;
+	grid-template-rows: 75px 2fr 2fr 2fr 1fr;
+  background-color: rgba(212,212,212,50);
 }
 
 header {
-	background-color: rgb(255,140,0);
+  grid-column: 1 / 9;
+  grid-row: 1 / 2;
+	background-color: rgba(255,140,0,30);
 	position: absolute;
 	width: 99%;
 	z-index: 10;
@@ -44,6 +47,10 @@ nav li{
 	width: 200px;
  }
 
+ .header_links{
+ 	position: absolute;
+ }
+
 .box{
   height: 750px;
   width: auto;
@@ -53,45 +60,83 @@ nav li{
   border: 2px black solid;
 }
 
-.a {
-  grid-column-start: 2;
-  grid-column-end: 4;
+/*AboutMe Section*/
+
+.aboutMe {
+  grid-column: 2 / 8;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 
+/*Skils Section*/
 
-.c {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 4;
+.skills {
+  grid-column: 2 / 8;
+  grid-row: 4 / 6;
+} 
+
+/*Awards Section*/
+
+.awards {
+  grid-column: 2 / 8;
+  grid-row-start: 6 ;
+  grid-row-end: 8;
 }
 
-.d {
-  grid-column-start: 5;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 4;
+/*Contact Section*/
+
+.contact {
+  background-color: rgba(212,212,212,50);
+  grid-column: 2 / 8;
+  grid-row: 8 / 10 ;
+  padding: 0px  20px;
+  height: 625px;
 }
 
-.e {
-  grid-column-start: 6;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 4;
+.contact h1{
+  text-align: center;
+  font-size: 30px; 
 }
 
-.f {
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 2;
-  grid-row-end: 4;
+.contact label{
+  font-size: 22.5px;
+  position: relative;
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
 }
+
+.contact input{
+  border-radius: 5px;
+  border: 1px solid rgb(0,0,0);
+  height: 40px;
+  width: 100%;
+  font-size: 150%;
+}
+
+.contact textarea{
+  border-radius: 5px;
+  resize: none;
+  border: 1px solid rgb(0,0,0);
+  height: 200px;
+  width: 100%;
+  font-size: 200%;
+}
+
+.contact form .submit{
+  text-align: center;
+  background-color: rgb(10,200,80);
+  height: 30px;
+  width: 100%;
+
+}
+
+/*FOOTER*/
 
 footer {
+  grid-column: 1 / 9;
+  grid-row: 10/11;
 	font-size: 18px;
-	background-color: rgb(255,255,255);
+	background-color: rgba(212,212,212,50);
 	color: rgb(0,0,0);
 	text-align: center;
 }

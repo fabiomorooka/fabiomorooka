@@ -1,0 +1,112 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+  <title>About | Fabio Eid Morooka</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./../ressources/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>-->
+  <link rel="shortcut icon" href="./images/index/logo.ico" type="image/x-icon" />
+  <meta name="Description" content="Fabio Eid Morooka WebSite">
+</head>
+<body>
+  <div class="grid">
+
+    <!-- HEADER-->
+    <header>
+      <nav>
+        <ul>
+          <li>About Me</li>
+          <li>Projects</li>
+          <li>Skills</li>
+          <li>Awards</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+    <div class="box a">AAA</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+    <div class="box f">F</div>
+    </div>
+
+
+    <!-- FOOTER-->
+    <footer class="footer">
+      <div class="container">
+        <nav class="social">
+          <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank"><img src="./images/index/footer/linkedin.png"></a>
+          <a href="https://github.com/fabiomorooka" target="_blank"><img src="./images/index/footer/github.png"></a>
+          <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank"><img src="./images/index/footer/facebook.png"></a>
+          <a href="https://www.instagram.com/fabio.eid/" target="_blank"><img src="./images/index/footer/instagram.png"></a>
+        </nav>
+        <span>&copy; Fabio Eid Morooka. All rights reserved.</span>
+      </div>
+    </footer>
+</body>
+</html>
+
+
+<!--
+
+	File app. js
+
+
+	
+const http = require('http');
+let {requestListener} = require('./callbackFile.js');
+const PORT = process.env.PORT || 4001;
+
+const server = http.createServer(requestListener);
+
+server.listen(PORT);
+
+------------------------------------------------------------
+File callbackFile.js
+
+const fs = require('fs');
+
+module.exports = {
+  requestListener: (req, res) => {
+  fs.readFile('./myWebsite.html',  'utf-8', (err, data) => {
+    if (err){
+      res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(`${err}`);
+    res.end();
+    } else {
+    res.writeHead(200, {'Content-Type': 'text/html'});
+    res.write(data);
+    res.end(); 
+    }
+  })
+}
+}
+
+
+
+----------------------------------------------
+
+File HTML
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+</head>
+
+<body>
+    <h1>I'm hosting this website with my own Node web server</h1>
+    <h2>Pretty exciting stuff...</h2>              
+</body>
+
+</html>
+
+	-->
