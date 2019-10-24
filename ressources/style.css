@@ -7,12 +7,8 @@
 	width: auto;
 	display: grid;
 	grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
-	grid-template-rows: 75px 2fr 2fr 2fr 2fr 2fr 1fr;
+	grid-template-rows: 75px 1fr 2fr 2fr 2fr 2fr 1fr;
   background-color: rgba(135,206,250,0.75);
-}
-
-h1{
-  font-size: 50px;
 }
 
 header {
@@ -55,7 +51,8 @@ nav li{
 }
 
 header a:hover{
-  color: black;
+  color: rgba(100,100,250,1);
+  transition: 0.8s ease ;
 }
 
  .header_links{
@@ -66,51 +63,105 @@ header a:hover{
 
 .aboutMeImage {
   grid-column: 1 / 5;
-  grid-row: 2 / 4;
-  position: static
+  grid-row: 2 / 3;
+  position: static;
 }
 
 /*AboutMe Section*/
 
 .aboutMe {
   grid-column: 5 / 9;
-  grid-row-start: 2 / 4;
-  color: black;
+  grid-row-start: 2 / 3;
+  color: rgb(255,255,255);
   background-color: rgba(135,206,250,0.8);
   height: 200%;
-  position: static
+  position: static;
+  padding: 0px 15px; 
 }
 
-.aboutMe h2{
+.aboutMe h1 img{
+  border-radius: 50% 25%;
+  width: 60% ;
+}
+
+.aboutMe h2 img{
+  height: 100px;
+  margin-right: 50px;
+  border-radius: 20%; 
+}
+
+.aboutMe h1{
   font-size: 50px;
+  text-align: right;
 }
 
-.aboutMe p{
-  font-size: 25px;
-}
 
 /*Education Section*/
 
 .education {
   grid-column: 1 / 9;
-  grid-row: 4 / 6;
+  grid-row: 3/ 5;
   background-color: rgba(240,240,240,0.8);
 } 
+
+.education h1{
+  background-color: rgb(255,140,0);
+  width: 40%;
+  height: 50px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10px 0px;
+  margin-left: 30%;
+  padding: 10px 10px;
+  text-align: center;
+  color: rgb(240,240,240);
+}
+
+.education p{
+  padding: 0px 10px;
+  font-size: 25px;
+}
 
 /*Skils Section*/
 
 .skills {
   grid-column: 1 / 9;
-  grid-row: 6 / 8;
+  grid-row: 5 / 7;
   background-color: rgba(135,206,250,0.75);
 } 
+
+.skills h1{
+  background-color: rgb(255,140,0);
+  width: 40%;
+  height: 50px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10px 0px;
+  margin-left: 30%;
+  padding: 10px 10px;
+  text-align: center;
+  color: rgb(240,240,240);
+}
 
 /*Awards Section*/
 
 .awards {
   grid-column: 1 / 9;
-  grid-row: 8 / 10;
+  grid-row: 7 / 9;
   background-color: rgba(240,240,240,0.8);
+}
+
+.awards h1{
+  background-color: rgb(255,140,0);
+  width: 40%;
+  height: 50px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 10px 0px;
+  margin-left: 30%;
+  padding: 10px 10px;
+  text-align: center;
+  color: rgb(240,240,240);
 }
 
 /*Contact Section*/
@@ -118,21 +169,29 @@ header a:hover{
 .contact {
   background-color: rgba(135,206,250,0.75);
   grid-column: 1 / 9;
-  grid-row: 10 / 12 ;
+  grid-row: 9 / 11 ;
   padding: 0px  10%;
   height: 625px;
 }
 
 .contact h1{
+  background-color: rgb(255,140,0);
+  width: 40%;
+  height: 50px;
+  line-height: 100%;
   text-align: center;
-  font-size: 30px; 
+  margin-top: 10px 0px;
+  margin-left: 30%;
+  padding: 10px 10px;
+  font-size: 30px;
+  color: rgb(240,240,240);
 }
 
 .contact label{
   font-size: 22.5px;
   position: relative;
   grid-column: 2 / 3;
-  grid-row: 10 / 11;
+  grid-row: 9 / 10;
 }
 
 .contact input{
@@ -155,6 +214,7 @@ header a:hover{
 .contact form .submit{
   text-align: center;
   background-color: rgb(255,140,0);
+  color: rgb(240,240,240);
   height: 30px;
   width: 100%;
 
@@ -164,7 +224,7 @@ header a:hover{
 
 footer {
   grid-column: 1 / 9;
-  grid-row: 12 / 13;
+  grid-row: 11 / 12;
 	font-size: 20px;
 	background-color: rgba(240,240,240,0.8);
 	color: rgb(0,0,0);
