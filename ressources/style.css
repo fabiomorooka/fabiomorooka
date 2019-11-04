@@ -8,7 +8,7 @@
 	display: grid;
 	grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
 	grid-template-rows: 75px 1fr 2fr 2fr 2fr 2fr 1fr;
-  background-color: rgba(135,206,250,0.75);
+  background-color: rgba(46,68,130, 1);
 }
 
 header {
@@ -71,28 +71,28 @@ header a:hover{
 
 .aboutMe {
   grid-column: 5 / 9;
-  grid-row-start: 2 / 3;
+  grid-row: 2 / 3;
   color: rgb(255,255,255);
-  background-color: rgba(135,206,250,0.8);
-  height: 200%;
+  background-color: rgba(135,206,250,0.45);
+  height: 100%;
   position: static;
   padding: 0px 15px; 
 }
 
+.aboutMe h1{
+  font-size: 50px;
+  text-align: center;
+}
+
 .aboutMe h1 img{
-  border-radius: 50% 25%;
-  width: 60% ;
+  border-radius: 25% 25%;
+  width: 50% ;
 }
 
 .aboutMe h2 img{
   height: 100px;
   margin-right: 50px;
   border-radius: 20%; 
-}
-
-.aboutMe h1{
-  font-size: 50px;
-  text-align: right;
 }
 
 
@@ -117,24 +117,47 @@ header a:hover{
   color: rgb(240,240,240);
 }
 
+.education h2, h3, h4{
+  color: rgb(240,240,240);
+  padding: 10px 10px;
+  font-size: 25px;  
+}
+
+.education img{
+  padding: 35px 0px;
+}
+
 .column {
   float: left;
 }
 
-.left {
-  width: 50%;
+.left{
+  width: 20%;
+  text-align: center;
 }
 
 .right {
-  width: 50%;
+  width: 35%;
 }
+
+.middle {
+  width: 45%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /*Skils Section*/
 
 .skills {
   grid-column: 1 / 9;
   grid-row: 5 / 7;
-  background-color: rgba(135,206,250,0.75);
+  background-color: rgba(46,68,130, 1);
 } 
 
 .skills h1{
@@ -174,7 +197,7 @@ header a:hover{
 /*Contact Section*/
 
 .contact {
-  background-color: rgba(135,206,250,0.75);
+  background-color: rgba(46,68,130, 1);
   grid-column: 1 / 9;
   grid-row: 9 / 11 ;
   padding: 0px  10%;
@@ -199,6 +222,7 @@ header a:hover{
   position: relative;
   grid-column: 2 / 3;
   grid-row: 9 / 10;
+  color: rgba(240,240,240,1);
 }
 
 .contact input{
@@ -246,28 +270,22 @@ footer {
 /*Extra information*/
 
 
-#back2Top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 999;
-    display: none;
-    cursor: pointer;
-    -moz-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    transform: rotate(270deg);
-    position: fixed;
-    bottom: 50px;
-    right: 0;
-    background-color: #DDD;
-    color: #555;
-    text-align: center;
-    font-size: 30px;
-    text-decoration: none;
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
-#back2Top:hover {
-    background-color: #DDF;
-    color: #000;
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
