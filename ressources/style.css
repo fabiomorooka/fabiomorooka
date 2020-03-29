@@ -2,290 +2,80 @@
 	box-sizing: border-box; 
 }
 
-.grid {
-	height: auto;
-	width: auto;
-	display: grid;
-	grid-template-columns: 5% 1fr 1fr 1fr 1fr 1fr 1fr 5%;
-	grid-template-rows: 75px 1fr 2fr 2fr 2fr 2fr 1fr;
-  background-color: rgba(46,68,130, 1);
-}
-
-header {
-  grid-column: 1 / 9;
-  grid-row: 1 / 2;
-	background-color: rgb(255,140,0);
-	position: static;
-	width: 100%;
-  height: auto;
-  line-height: 100%;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: right;
-}
-
 ul {
-  margin: 20px auto;
-  padding: 0px 100px;
-  text-align: right;
+  padding-left: 1.4rem;
+  list-style: square;
 }
 
-/*Informations of the letters in the header*/
-li {
-	color: rgb(240,240,240);
-	font-weight: 500;
-	display: inline-block;
-	width:200px;
-}
-
-nav li{
-	font-size: 22.5px;
-	display: inline-block;
-	width: 200px;
- }
-
- a{
-  text-decoration: none;
-  color: inherit;
-}
-
-header a:hover{
-  color: rgba(100,100,250,1);
-  transition: 0.8s ease ;
-}
-
- .header_links{
- 	position: static;
- }
-
-/*AboutMe Image Section*/
-
-.aboutMeImage {
-  grid-column: 1 / 5;
-  grid-row: 2 / 3;
-  position: static;
-}
-
-/*AboutMe Section*/
-
-.aboutMe {
-  grid-column: 5 / 9;
-  grid-row: 2 / 3;
-  color: rgb(255,255,255);
-  background-color: rgba(135,206,250,0.45);
-  height: 100%;
-  position: static;
-  padding: 0px 15px; 
-}
-
-.aboutMe h1{
-  font-size: 50px;
-  text-align: center;
-}
-
-.aboutMe h1 img{
-  border-radius: 25% 25%;
-  width: 50% ;
-}
-
-.aboutMe h2 img{
-  height: 100px;
-  margin-right: 50px;
-  border-radius: 20%; 
-}
-
-
-/*Education Section*/
-
-.education {
-  grid-column: 1 / 9;
-  grid-row: 3/ 5;
-  background-color: rgba(240,240,240,0.8);
-} 
-
-.education h1{
-  background-color: rgb(255,140,0);
-  width: 40%;
-  height: 50px;
-  line-height: 100%;
-  text-align: center;
-  margin-top: 10px 0px;
-  margin-left: 30%;
-  padding: 10px 10px;
-  text-align: center;
-  color: rgb(240,240,240);
-}
-
-.education h2, h3, h4{
-  color: rgb(240,240,240);
-  padding: 10px 10px;
-  font-size: 25px;  
-}
-
-.education img{
-  padding: 35px 0px;
-}
-
-.column {
-  float: left;
-}
-
-.left{
-  width: 20%;
-  text-align: center;
-}
-
-.right {
-  width: 35%;
-}
-
-.middle {
-  width: 45%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-/*Skils Section*/
-
-.skills {
-  grid-column: 1 / 9;
-  grid-row: 5 / 7;
-  background-color: rgba(46,68,130, 1);
-} 
-
-.skills h1{
-  background-color: rgb(255,140,0);
-  width: 40%;
-  height: 50px;
-  line-height: 100%;
-  text-align: center;
-  margin-top: 10px 0px;
-  margin-left: 30%;
-  padding: 10px 10px;
-  text-align: center;
-  color: rgb(240,240,240);
-}
-
-/*Awards Section*/
-
-.awards {
-  grid-column: 1 / 9;
-  grid-row: 7 / 9;
-  background-color: rgba(240,240,240,0.8);
-}
-
-.awards h1{
-  background-color: rgb(255,140,0);
-  width: 40%;
-  height: 50px;
-  line-height: 100%;
-  text-align: center;
-  margin-top: 10px 0px;
-  margin-left: 30%;
-  padding: 10px 10px;
-  text-align: center;
-  color: rgb(240,240,240);
-}
-
-/*Contact Section*/
-
-.contact {
-  background-color: rgba(46,68,130, 1);
-  grid-column: 1 / 9;
-  grid-row: 9 / 11 ;
-  padding: 0px  10%;
-  height: 625px;
-}
-
-.contact h1{
-  background-color: rgb(255,140,0);
-  width: 40%;
-  height: 50px;
-  line-height: 100%;
-  text-align: center;
-  margin-top: 10px 0px;
-  margin-left: 30%;
-  padding: 10px 10px;
-  font-size: 30px;
-  color: rgb(240,240,240);
-}
-
-.contact label{
-  font-size: 22.5px;
+.inner-wrap{
   position: relative;
-  grid-column: 2 / 3;
-  grid-row: 9 / 10;
-  color: rgba(240,240,240,1);
-}
-
-.contact input{
-  border-radius: 5px;
-  border: 1px solid rgb(0,0,0);
-  height: 40px;
   width: 100%;
-  font-size: 150%;
 }
 
-.contact textarea{
-  border-radius: 5px;
-  resize: none;
-  border: 1px solid rgb(0,0,0);
-  height: 200px;
+.fixed{
+  position: fixed;
+  top: 0;
   width: 100%;
-  font-size: 200%;
+  left: 0;
 }
 
-.contact form .submit{
-  text-align: center;
+.menu{
   background-color: rgb(255,140,0);
-  color: rgb(240,240,240);
-  height: 30px;
-  width: 100%;
-  cursor: pointer;
-
+  padding: 10px 0px;
 }
 
-/*Footer*/
-
-footer {
-  grid-column: 1 / 9;
-  grid-row: 11 / 12;
-	font-size: 20px;
-	background-color: rgba(240,240,240,0.8);
-	color: rgb(0,0,0);
-	text-align: center;
+.menu ul.menu-items{
+  list-style-type: none;
+  max-width: 90%;
+  margin: 0 auto;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Lato";
+  font-size: 1.4rem;
 }
 
-.social{
-  font-size: 18px;
+.menu ul.menu-items li.item-right{
+  float: right;
+  margin: 18px 1px;
 }
 
-/*Extra information*/
-
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+.menu ul.menu-items li{
+  padding-right: 1rem; 
+  padding-left: 1rem;
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+.menu ul.menu-items li.item-left{
+  float: left;
+  margin-top: 7px;
 }
+
+.menu ul.menu-tems li{
+  padding-right: 1rem; 
+  padding-left: 1rem;
+}
+
+
+li{
+  display: inline;
+  margin: 0 10px 0;
+  text-align: center; 
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
