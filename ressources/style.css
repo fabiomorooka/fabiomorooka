@@ -7,6 +7,21 @@ ul {
   list-style: square;
 }
 
+a{
+  line-height: inherit;
+  text-decoration: none;
+}
+
+.row{
+  margin: 0 auto;
+  max-width: 62.5rem;
+  width: 100%;
+}
+
+.text-center{
+  text-align: center !important;
+}
+
 .inner-wrap{
   position: relative;
   width: 100%;
@@ -20,7 +35,7 @@ ul {
 }
 
 .menu{
-  background-color: rgb(255,140,0);
+  background-color: rgb(0,102,162);
   padding: 10px 0px;
 }
 
@@ -28,10 +43,16 @@ ul {
   list-style-type: none;
   max-width: 90%;
   margin: 0 auto;
+}
+
+.menu ul.menu-items a{
   color: white;
+  padding-bottom: 10px;
   letter-spacing: 1px;
   font-family: "Lato";
+  font-weight: 400;
   font-size: 1.4rem;
+  vertical-align: baseline;
 }
 
 .menu ul.menu-items li.item-right{
@@ -54,17 +75,35 @@ ul {
   padding-left: 1rem;
 }
 
-
-li{
-  display: inline;
-  margin: 0 10px 0;
-  text-align: center; 
-  text-decoration: none;
+section#main{
+  max-height: 80vh;
+  background: url("https://d1ep31o42b6tif.cloudfront.net/carreiras/carreiras_back.jpg");
+  background-color: #F7F7F7;
+  background-size: cover;
+  background-position: center right
+  background-repeat: no-repeat;
 }
 
-a{
-  text-decoration: none;
-  color: white;
+
+footer{
+  display: block;
+}
+
+
+footer#footer-home{
+  min-height: 30px;
+  background: rgba(240,240,240,0.8);
+  color: rgb(0, 0, 0);
+}
+
+footer#footer-home #copyright{
+  background: rgba(240,240,240);
+  width: 100%;
+  margin-left: auto; 
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0 0 0);
 }
 
 
