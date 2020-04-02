@@ -7,14 +7,40 @@ ul {
   list-style: square;
 }
 
+body {
+  background: #fff;
+  color: white;
+  cursor: auto;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 a{
   line-height: inherit;
   text-decoration: none;
 }
 
+section{
+  display: block;
+}
+
+
 .row{
   margin: 0 auto;
   max-width: 62.5rem;
+  width: 100%;
+}
+
+.column, .columns{
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  float: left;
   width: 100%;
 }
 
@@ -35,7 +61,7 @@ a{
 }
 
 .menu{
-  background-color: rgb(0,102,162);
+  background-color: rgb(0,102,162,0.5);
   padding: 10px 0px;
 }
 
@@ -75,15 +101,43 @@ a{
   padding-left: 1rem;
 }
 
-section#main{
+section#main-home{
   max-height: 80vh;
-  background: url("https://d1ep31o42b6tif.cloudfront.net/carreiras/carreiras_back.jpg");
+  background: url("C:\\Users\\fabio\\Desktop\\fabiomorooka.github.io\\images\\index\\aboutMe\\cielDesert.jpg");
   background-color: #F7F7F7;
   background-size: cover;
   background-position: center right
   background-repeat: no-repeat;
 }
 
+section#main-home header{
+  padding: 3rem 0rem;
+  max-width: 96rem;
+  margin: 0 auto;
+}
+
+section#main-home header .top-home-logo{
+  position: relative;
+  margin: 10vh auto 0;
+}
+
+section#education{
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+  background-color: #F7F7F7;
+}
+
+section#education article{
+  max-width: 96rem;
+}
+
+section#education article h3{
+  margin: 1rem;
+  font-size: 3.9rem;
+  font-family: "Lato";
+  color: #E8782D;
+}
 
 footer{
   display: block;
@@ -92,24 +146,54 @@ footer{
 
 footer#footer-home{
   min-height: 30px;
-  background: rgba(240,240,240,0.8);
+  background: rgba(26,26,26,0.25);
   color: rgb(0, 0, 0);
 }
 
 footer#footer-home #copyright{
-  background: rgba(240,240,240);
+  background: #313131;
   width: 100%;
   margin-left: auto; 
   margin-right: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: rgb(0 0 0);
+  color: white;
 }
 
 
+@media only screen{
+  .small-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 40.0625em){
+  .column, .columns{
+    position: relative;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    float: left;
+  }
+}
+
+@media screen and  (min-width: 55em){
+  h3{
+    font-size: 1.6875rem;
+    line-height: 1.4;
+  }
+
+  section#main-home{
+    padding-bottom: 12%;
+  }
 
 
+}
 
+@media screen and (max-width: 55em) and (min-width: 23em){
+  section#education article{
+    margin: 2% auto;
+  }
+}
 
 
 
