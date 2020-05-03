@@ -8,3 +8,27 @@
   color: white;
   border-color: white;
 }
+footer{
+	background-color: #222;
+}
+
+footer a{
+	display: block;
+	color: white;
+}
+
+footer a:hover{
+  color: rgba(0,102,162);
+  transition: 0.8s ease ; 
+}
+
+#footer-title{
+	color: white;
+	padding: 25px 0px; 
+}
+
+#copyright{
+	color: white;
+	text-align: center;
+	padding-bottom: 15px;
+}
