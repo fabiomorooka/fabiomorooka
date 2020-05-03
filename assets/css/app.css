@@ -1,20 +1,47 @@
 @charset "UTF-8";
 
-#startMenu, #dropMenu{
+#menu-fixe, #menu-drop{
   background-color: rgb(0,102,162);
 }
 
-#dropMenu a{
+#menu-drop a{
   color: white;
   border-color: white;
 }
+
+#menu-hide{
+  background-color: rgb(0,102,162);
+}
+
+#intro{
+  background-image: url("C:\\Users\\fabio\\Desktop\\fabiomorooka.github.io\\assets\\img\\index\\skyDesert.jpg");
+  background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 100% !important;
+    z-index: 0;
+  padding: 25px 0px;
+}
+
+#intro-title{
+  color: white;
+  padding: 25px 0px 0px 5px;
+}
+
+#intro-text{
+  color: white;
+  padding: 0px 0px 25px 5px;
+}
+
 footer{
-	background-color: #222;
+  background-color: #222;
 }
 
 footer a{
-	display: block;
-	color: white;
+  display: block;
+  color: white;
 }
 
 footer a:hover{
@@ -23,12 +50,12 @@ footer a:hover{
 }
 
 #footer-title{
-	color: white;
-	padding: 25px 0px; 
+  color: white;
+  padding: 25px 0px; 
 }
 
 #copyright{
-	color: white;
-	text-align: center;
-	padding-bottom: 15px;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
 }

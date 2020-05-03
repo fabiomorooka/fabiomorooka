@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="My own portfolio">
-    <meta name="description" content="Fabio Eid Morooka's life">
+    <meta name="description" content="Fabio Eid Morooka Website">
     <title>About | Fabio Eid Morooka</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -13,23 +13,23 @@
   </head>
   <body>
     <!-- Navigation -->
-    <div class="title-bar" data-responsive-toggle="startMenu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="startMenu"></button>
+    <div class="title-bar" data-responsive-toggle="menu-fixe" data-hide-for="medium" id="menu-hide">
+      <button class="menu-icon" type="button" data-toggle="menu-fixe"></button>
       <div class="title-bar-title">Menu</div>
     </div>
 
-    <div class="top-bar" id="startMenu">
+    <div class="top-bar" id="menu-fixe">
       <div class="menu-text">
-        <a href="./index.html">
+        <a href="/">
               <img src="assets/img/menu/menuImage.png" text = "website logo">
         </a>
       </div>
       <div class="top-bar-left">
-        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="dropMenu">
-        <li><a href="./index.html">Home</a></li> 
+        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="menu-drop">
+        <li><a href="/">Home</a></li> 
           <li>
             <a href="#">Education</a>
-            <ul class="nested vertical menu" id="dropMenu">
+            <ul class="nested vertical menu" id="menu-drop">
               <li><a href="#">High School</a></li>
               <li><a href="#">University</a></li>
               <li><a href="#">Professional Life</a></li>
@@ -43,13 +43,30 @@
       </div>
     </div>
     <!-- /Navigation -->
+    
+    <!-- First section -->
+    <div id="intro">
+      <div class="grid-container">
+        <div class="grid-x align-middle">
+          <div class="cell medium-7 large-9">
+            <p class="h1"  id="intro-title">Welcome</p>
+            <p class="subheader" id="intro-text">My name is Fabio Eid Morooka and you are in my personal website, feel free to explore it. &#x1F604.</p>
+          </div>
 
+          <div class="cell show-for-large large-3" id="profilePicture">
+            <img src="assets/img/index/profilePicture2.jpg" alt="Profile picture">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /First section -->
+    
     <!-- Footer -->
     <footer>
       <div class="grid-container">
         <div class="grid-x grid-margin-x small-up-1 large-up-3">
           <div class="cell" id="footer-title">
-            <h4>Contact Info</h4>
+            <h4>Contact Information</h4>
             <hr>
             <a><span>Phone</span> +33 (0)7 69 53 71 25</a>
             <a><span>Email</span> fabio.morooka@gmail.com</a>
@@ -74,6 +91,7 @@
             <a href="/" target="_blank">Discord</a>
           </div>
         </div>
+        <hr>
         <div class="grid-x grid-margin-x small-up-1 large-up-1">
           <div class="cell" id="copyright">
             <div>&copy; Fabio Eid Morooka. All rights reserved.</div>
@@ -95,6 +113,7 @@
     <script src="assets/js/plugins/foundation.drilldown.js"></script>
     <script src="assets/js/plugins/foundation.dropdown.js"></script>
     <script src="assets/js/plugins/foundation.dropdownMenu.js"></script>
+    <script src="assets/js/plugins/foundation.interchange.js"></script>
     <script src="assets/js/plugins/foundation.responsiveMenu.js"></script>
     <script src="assets/js/plugins/foundation.responsiveToggle.js"></script>
     <script src="assets/js/plugins/foundation.toggler.js"></script>
