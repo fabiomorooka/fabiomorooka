@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+#startMenu, #dropMenu{
+  background-color: rgb(0,102,162);
+}
+
+#dropMenu a{
+  color: white;
+  border-color: white;
+}

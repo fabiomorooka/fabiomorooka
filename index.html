@@ -1,160 +1,67 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="My own WebSite">
-    <meta name="description" content="Fabio Eid Morooka WebSite">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="My own portfolio">
+    <meta name="description" content="Fabio Eid Morooka's life">
     <title>About | Fabio Eid Morooka</title>
-    <link rel="stylesheet" type="text/css" href="./ressources/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./ressources/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/2.0.3/motion-ui.min.js">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.6.3/css/foundation-prototype.min.css">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="./images/index/logo.ico" type="image/x-icon" />
-    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>-->
-
+    <link rel="stylesheet" href="ressources/css/foundation.css">
+    <link rel="stylesheet" href="ressources/css/app.css">
+    <link rel="shortcut icon" href="images/menu/logo.ico" type="image/x-icon" />
   </head>
-
   <body>
-
     <!-- Navigation -->
-    <!--
-    <div class="title-bar" data-responsive-toggle="realEstateMenu" data-hide-for="small">
-      <button class="menu-icon" type="button" data-toggle></button>
+    <div class="title-bar" data-responsive-toggle="startMenu" data-hide-for="medium">
+      <button class="menu-icon" type="button" data-toggle="startMenu"></button>
       <div class="title-bar-title">Menu</div>
     </div>
-    -->
 
-    <!-- This is the fixed menu -->
-    <div class="top-bar" id="realEstateMenu">
-      <div class="top-bar-left">
-        <ul class="menu" data-responsive-menu="accordion">
-          <li class= "item-left">
-            <a href="/">
-              <img src="./images/index/menuImage.png" text = "website logo">
-            </a>
-          </li>
-        </ul>
+    <div class="top-bar" id="startMenu">
+      <div class="menu-text">
+        <a href="/">
+              <img src="images/menu/menuImage.png" text = "website logo">
+        </a>
       </div>
-      <!-- This is the menu os items -->
-      <div class="top-bar-right">
-        <ul class="menu">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="dropMenu"> 
           <li>
-            <a href="#education">Education</a>
+            <a href="#">Education</a>
+            <ul class="nested vertical menu" id="dropMenu">
+              <li><a href="#">High School</a></li>
+              <li><a href="#">University</a></li>
+              <li><a href="#">Professional Life</a></li>
+            </ul>
           </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#skills">Skills</a>
-          </li>
-          <li>
-            <a href="#awards">Awards</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
     </div>
     <!-- /Navigation -->
 
-    <br>
-
-    <div class="row">
-
-      <div class="medium-7 large-6 columns">
-        <h1>Welcome to my Website</h1>
-        <p class="subheader">My name is Fabio Eid Morooka and you are in my personal website, feel free to explore it. &#x1F604</p>
-        <button class="button">Take a Tour</button>
-        <button class="button">Start a free trial</button>
-      </div>
-
-      <div class="show-for-large large-3 columns">
-        <img src="./images/index/aboutMe/profilePicture2.jpg" alt="Profile picture">
-      </div>
-
-      <div class="medium-5 large-3 columns">
-        <div class="callout secondary">
-          <form>
-            <div class="row">
-              <div class="small-12 columns">
-                <label>Find Your Dream Planet
-                  <input type="text" placeholder="Search destinations">
-                </label>
-              </div>
-              <div class="small-12 columns">
-                <label>Number of Moons
-                  <input type="number" placeholder="Moons required">
-                </label>
-                <button type="submit" class="button">Search Now!</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-    </div>
-
-    <div>
-      <section id="main" class="main-section" style="overflow-y: overlay;height: 100%;">
-
-        <section id="main-home">
-         <header>
-           <div>
-             <div class="top-home-logo">
-              <div class="row">
-                <div class="intro column small-4">
-                  <span>Hello</span>               
-                </div>
-                <div class="intro column small-4">
-                  <p>My name is Fabio Eid Morooka and you are in my personal website, feel free to explore it. &#x1F604</p>
-                </div>
-              </div>
-               
-             </div>
-           </div>
-         </header>
-
-        </section>
-
-        <section id="education">
-          <article>
-            <h3>Educational Life</h3>
-          </article>
-        </section>
-
-        <footer id="footer-home">
-          <div class="row text-center">
-            <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank"><img src="./images/index/footer/linkedin.png"></a>
-            <a href="https://github.com/fabiomorooka" target="_blank"><img src="./images/index/footer/github.png"></a>
-            <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank"><img src="./images/index/footer/facebook.png"></a>
-            <a href="https://www.instagram.com/fabio.eid/" target="_blank"><img src="./images/index/footer/instagram.png"></a>
-          </div>
-
-          <header id="copyright">
-            <center>
-              <small>&copy; Fabio Eid Morooka. All rights reserved.</small>
-            </center>
-          </header>
-          
-        </footer>
-        
-
-      </section>
-      
-    </div>
-    <!--
-      <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-      <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    -->
-      <script src="./ressources/js/app.js"></script>
-      <script src="./ressources/js/vendor/foundation.js"></script>
-      <script src="./ressources/js/vendor/what-input.js"></script>
-      <script src="./ressources/js/vendor/main.js"></script>
-      
-
+    <!-- jQuery must be imported before Foundation -->
+    <script src="ressources/js/vendor/jquery.js"></script>
+    <!-- This will include every plugin and utility required by Foundation -->
+    <script src="ressources/js/plugins/foundation.core.js"></script>
+    <!-- This will include the specific Java Script actions used in the website-->
+    <script src="ressources/js/vendor/foundation.min.js"></script>
+    <script src="ressources/js/plugins/foundation.accordion.js"></script>
+    <script src="ressources/js/plugins/foundation.accordionMenu.js"></script>
+    <script src="ressources/js/plugins/foundation.drilldown.js"></script>
+    <script src="ressources/js/plugins/foundation.dropdown.js"></script>
+    <script src="ressources/js/plugins/foundation.dropdownMenu.js"></script>
+    <script src="ressources/js/plugins/foundation.responsiveMenu.js"></script>
+    <script src="ressources/js/plugins/foundation.responsiveToggle.js"></script>
+    <script src="ressources/js/plugins/foundation.toggler.js"></script>
+    <script src="ressources/js/plugins/foundation.util.mediaQuery.js"></script>
+    <script src="ressources/js/plugins/foundation.util.motion.js"></script>
+    <script src="ressources/js/plugins/foundation.util.triggers.js"></script>
+    <script src="ressources/js/vendor/what-input.js"></script>
+    <!-- This will include the Java Script actions developped -->
+    <script src="ressources/js/app.js"></script>  
   </body>
 </html>
