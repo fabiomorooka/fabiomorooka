@@ -55,7 +55,7 @@
         </div>
       </div>
 
-      <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST" />
+      <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST">
         <div class="grid-container">
           <div class="grid-x grid-padding-x align-center">
             <div class="cell large-1 medium-2 small-2">
@@ -71,7 +71,7 @@
               <label id="info-forms" for="guest-email" class="h5 text-right">Email*</label>
             </div>
             <div class="cell large-8 medium-10 small-10">
-              <input type="email" id="guest-email" autocomplete="email" required="" placeholder="">
+              <input type="email" name="_replyto" id="guest-email" autocomplete="email" required="" placeholder="">
             </div>
           </div>
 
@@ -80,7 +80,7 @@
               <label id="info-forms" for="guest-message" class="h5 text-right">Message*</label>
             </div>
             <div class="cell large-8 medium-10 small-10">
-              <textarea type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
+              <textarea name="message" type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
             </div>
           </div>
 
@@ -88,7 +88,7 @@
             <div class="cell large-1 medium-2 small-2">
             </div>
             <div class="cell large-8 medium-10 small-10">
-              <input type="submit" id="submit-button" value="Click here to send your message!" class="submit success button expanded">
+              <button type="submit" id="submit-button" class="submit success button expanded">Click here to send your message!</button>
             </div>
           </div>
         </div>  
