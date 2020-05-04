@@ -9,27 +9,28 @@
     <title>About | Fabio Eid Morooka</title>
     <link rel="stylesheet" href="../assets/css/foundation.min.css">
     <link rel="stylesheet" href="../assets/css/app.css">
-    <link rel="shortcut icon" href="../assets/img/menu/logo.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/img/menu/logo.ico" type="image/x-icon"/>
   </head>
   <body>
     <!-- Navigation -->
-    <div class="title-bar" data-responsive-toggle="startMenu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle="startMenu"></button>
+    <div class="title-bar" data-responsive-toggle="menu-fixe" data-hide-for="medium" id="menu-hide">
+      <button class="menu-icon" type="button" data-toggle="menu-fixe"></button>
       <div class="title-bar-title">Menu</div>
     </div>
 
-    <div class="top-bar" id="startMenu">
+    <div class="top-bar" id="menu-fixe">
       <div class="menu-text">
         <a href="/">
               <img src="../assets/img/menu/menuImage.png" text = "website logo">
         </a>
       </div>
       <div class="top-bar-left">
-        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="dropMenu">
-        <li><a href="/">Home</a></li> 
+        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="menu-drop">
+        <li><a href="/">Home</a></li>
+        <li><a href="aboutMe.html">About Me</a></li> 
           <li>
             <a href="#">Education</a>
-            <ul class="nested vertical menu" id="dropMenu">
+            <ul class="nested vertical menu" id="menu-drop">
               <li><a href="#">High School</a></li>
               <li><a href="#">University</a></li>
               <li><a href="#">Professional Life</a></li>
@@ -38,7 +39,7 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Awards</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -54,11 +55,12 @@
             <a><span>Phone</span> +33 (0)7 69 53 71 25</a>
             <a><span>Email</span> fabio.morooka@gmail.com</a>
             <a><span>Address</span> 16, Rue Maréchal Joffre, 35700 Rennes, France</a>
+            <a href="contact.html">Send me a message!</a>
           </div>
           <div class="cell" id="footer-title">
             <h4>Site Map</h4>
             <hr>
-            <a href="./aboutMe.html">About Me</a>
+            <a href="aboutMe.html">About Me</a>
             <a href="#">Education</a>
             <a href="#">Projects</a>
             <a href="#">Skills</a>
