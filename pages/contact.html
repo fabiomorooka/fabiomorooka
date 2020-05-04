@@ -45,6 +45,58 @@
     </div>
     <!-- /Navigation -->
 
+    <!-- Email forms -->
+    <!-- Contact-->
+
+    <div class = "grid-container">
+      <div class="grid-x grid-padding-x align-center">
+        <div class="cell large-9 medium-12 small-12">
+          <p class="h1 text-center">Leave a message</p>
+        </div>
+      </div>
+
+      <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST" />
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x align-center">
+            <div class="cell large-1 medium-2 small-2">
+              <label id="info-forms" for="guest-name" class="h5 text-right">Name*</label>
+            </div>
+            <div class="cell large-8 medium-10 small-10">
+              <input type="text" id="guest-name" autocomplete="name" required="" placeholder="">
+            </div>
+          </div>
+
+          <div class="grid-x grid-padding-x align-center">
+            <div class="cell large-1 medium-2 small-2">
+              <label id="info-forms" for="guest-email" class="h5 text-right">Email*</label>
+            </div>
+            <div class="cell large-8 medium-10 small-10">
+              <input type="email" id="guest-email" autocomplete="email" required="" placeholder="">
+            </div>
+          </div>
+
+          <div class="grid-x grid-padding-x align-center">
+            <div class="cell large-1 medium-2 small-2">
+              <label id="info-forms" for="guest-message" class="h5 text-right">Message*</label>
+            </div>
+            <div class="cell large-8 medium-10 small-10">
+              <textarea type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
+            </div>
+          </div>
+
+          <div class="grid-x grid-padding-x align-center">
+            <div class="cell large-1 medium-2 small-2">
+            </div>
+            <div class="cell large-8 medium-10 small-10">
+              <input type="submit" id="submit-button" value="Click here to send your message!" class="submit success button expanded">
+            </div>
+          </div>
+        </div>  
+      </form>
+    </div>
+
+    <!-- /Email forms -->
+
     <!-- Footer -->
     <footer>
       <div class="grid-container">
