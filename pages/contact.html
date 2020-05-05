@@ -18,7 +18,7 @@
       <div class="title-bar-title">Menu</div>
     </div>
 
-    <div class="top-bar" id="menu-fixe">
+    <div class="top-bar" data-sticky data-margin-top="0" id="menu-fixe">
       <div class="menu-text">
         <a href="/">
               <img src="../assets/img/menu/menuImage.png" text = "website logo">
@@ -39,16 +39,19 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Awards</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="contact.html">Contact</a>
+            <ul class="nested vertical menu" id="menu-drop" data-magellan>
+              <li><a href="#">Write an e-mail</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
     <!-- /Navigation -->
 
     <!-- Email forms -->
-    <!-- Contact-->
-
-    <div class = "grid-container">
+    <div class = "grid-container" id="send-email">
       <div class="grid-x grid-padding-x align-center">
         <div class="cell large-9 medium-12 small-12">
           <p class="h1 text-center">Leave a message</p>
@@ -96,6 +99,68 @@
     </div>
 
     <!-- /Email forms -->
+
+    <!-- Social Midia-->
+    <div class="grid-container">
+        <div class="media-object align-center stack-for-small">
+          <div class="media-object-section">
+            <div class="thumbnail">
+              <img src="../assets/img/index/profilePicture.jpg" alt="Profile picture social media" width="350px">
+            </div>
+          </div>
+          <div class="media-object-section hide-for-small">
+            <p class="h1">Social Media</p>
+            <div class="grid-container">
+              <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section">
+                      <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank">
+                        <img src="../assets/img/contact/facebook.svg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section">
+                      <a href="https://www.instagram.com/fabio.eid/" target="_blank">
+                        <img src="../assets/img/contact/instagram.svg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="card">
+                    <div class="card-section">
+                      <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">
+                        <img src="../assets/img/contact/linkedin.svg">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <p class="h1">Contact Information</p>
+            <div class="grid-container">
+              <div class="grid-x grid-margin-x small-up-2 medium-up-3"> 
+                <div class="card">
+                  <div class="card-section">
+                    <p class="h5">Phone number: +33 (0)7 69 53 71 25</p>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-section">
+                    <p class="h5">E-mail: fabio.morooka@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- /Social Midia -->
 
     <!-- Footer -->
     <footer>
