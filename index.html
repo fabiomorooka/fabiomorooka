@@ -20,7 +20,7 @@
     </div>
 
     <div class="top-bar" id="menu-fixe">
-      <div class="menu-text">
+      <div class="menu-text hide-for-small-only">
         <a href="/">
           <img src="assets/img/menu/menuImage.png" text = "website logo">
         </a>
@@ -40,6 +40,7 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Awards</a></li>
+          <li><a href="#">Blog</a></li>
           <li>
             <a href="pages/contact.html">Contact</a>
             <ul class="nested vertical menu" id="menu-drop" data-magellan>
@@ -52,61 +53,174 @@
     <!-- /Navigation -->
     
     <!-- First section -->
-    <div id="intro">
-      <div class="grid-container">
-        <div class="grid-x align-middle">
-          <div class="cell medium-7 large-9">
-            <p class="h1"  id="intro-title">Welcome</p>
-            <p class="subheader" id="intro-text">My name is Fabio Eid Morooka and you are in my personal website, feel free to explore it. &#x1F604.</p>
+    <div class="intro-content-section">
+      <div class="intro-content-section-img">
+        <img src="https://i.imgur.com/0EmtNfV.jpg" alt="Sky desert" title="Sky desert" />
+      </div>
+      <div class="intro-content-section-block">
+        <p class="h2 intro-content-section-block-header">Welcome</p>
+        <p class="intro-content-section-block-subheader subheader">My name is Fabio Eid Morooka and this is website, feel free to explore it &#x1F604</p>
+        <a href="#" class="round button large">about me</a>
+      </div>
+      <div class="intro-content-section-block small-order-2 medium-order-1">
+        <p class="h2 intro-content-section-block-header">Personnal Blog</p>
+        <p class="intro-content-section-block-subheader subheader">This site is also my personal blog, feel free to explore it.</p>
+        <a href="#" class="round button large">go to blog</a>
+      </div>
+      <div class="intro-content-section-img small-order-1 medium-order-2">
+        <img src="https://i.imgur.com/Ih46x4D.jpg" alt="Monet garden" title="Monet garden" />
+      </div>
+    </div>
+    <!-- /First section -->
+
+    <!-- News on the website -->
+    <div class="grid-container full" id="news">
+      <div class="news-block-grid">
+        <div class="news-block-grid-header small-10 medium-8 large-7 columns text-center">
+          <p class="h2">News</p>
+          <p class="h4">These are the last news on my website and blog</p>
+        </div>
+        <div class="grid-x large-up-3 small-up-2">
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=667" />
+              <p class="text-center news-block-title">Project A</p>
+            </a>
+          </div>
+          
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=693" />
+              <p class="text-center news-block-title">Project B</p>
+            </a>
+          </div>
+          
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=452" />
+              <p class="text-center news-block-title">Post A</p>
+            </a>
+          </div>
+                  
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=249" />
+              <p class="text-center news-block-title">News A</p>
+            </a>
+          </div>
+          
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=382" />
+              <p class="text-center news-block-title">Feature A</p>
+            </a>
           </div>
 
-          <div class="cell show-for-large large-3" id="profilePicture">
-            <img src="assets/img/index/profilePicture2.jpg" alt="Profile picture">
+          <div class="news-block cell">
+           <a href="#">
+              <img src="https://unsplash.it/600/440?image=1075" />
+              <p class="text-center news-block-title">Test A</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
-    <!-- /First section -->
+    <!-- /News on the website-->
     
     <!-- Footer -->
     <footer>
       <div class="grid-container">
         <div class="grid-x grid-margin-x small-up-1 large-up-3">
-          <div class="cell" id="footer-title">
-            <h4>Contact Information</h4>
+          <div class="cell text-center" id="footer-title">
+            <h4>Contact information</h4>
             <hr>
-            <a><span>Phone</span> +33 (0)7 69 53 71 25</a>
-            <a><span>Email</span> fabio.morooka@gmail.com</a>
-            <a><span>Address</span> 16, Rue Maréchal Joffre, 35700 Rennes, France</a>
-            <a href="pages/contact.html">Send me a message!</a>
+            <div class="text-left">
+              <div class="my-website-footer-block">
+                <i class="fi-marker" aria-hidden="true"></i>
+                <p id="footer-contact">16, Rue Maréchal Joffre, 35000<br>Rennes, France</p>
+              </div>
+              <div class="my-website-footer-block">
+                <i class="fi-telephone" aria-hidden="true"></i>
+                <p id="footer-contact">+33 (0)7 69 53 71 25</p>
+              </div>
+              <div class="my-website-footer-block">
+                <i class="fi-mail" aria-hidden="true"></i>
+                <p id="footer-contact">fabio.morooka@gmail.com</p>
+              </div>
+              <div class="my-website-footer-block">
+                <i class="fi-pencil" aria-hidden="true"></i>
+                <p><a href="pages/contact.html">Send me a message!</a></p>
+              </div>
+            </div>
           </div>
-          <div class="cell" id="footer-title">
-            <h4>Site Map</h4>
-            <hr>
-            <a href="pages/aboutMe.html">About Me</a>
-            <a href="pages/education.html">Education</a>
-            <a href="#">Projects</a>
-            <a href="#">Skills</a>
-            <a href="#">Awards</a>
-          </div>
-          <div class="cell" id="footer-title">
+          <div class="cell text-center" id="footer-title">
             <h4>Social Media</h4>
             <hr>
-            <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com/fabio.eid/" target="_blank">Instagram</a>
-            <a href="https://github.com/fabiomorooka" target="_blank">Github</a>
-            <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">LinkedIn</a>
-            <a href="/" target="_blank">Discord</a>
+            <div class="cell">
+              <div class="rounded-social-buttons">
+                <a class="social-button facebook" href="https://www.facebook.com/fabio.eid.morooka" target="_blank"><i class="fi-social-facebook"></i></a>
+                <a class="social-button linkedin" href="https://www.linkedin.com/in/fabiomorooka/" target="_blank"><i class="fi-social-linkedin"></i></a>
+              </div>  
+            </div>
+            <div class="cell">
+              <div class="rounded-social-buttons">
+                <a class="social-button instagram" href="https://www.instagram.com/fabio.eid/" target="_blank"><i class="fi-social-instagram"></i></a>
+                <a class="social-button github" href="https://github.com/fabiomorooka" target="_blank"><i class="fi-social-github"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-        <hr>
-        <div class="grid-x grid-margin-x small-up-1 large-up-1">
-          <div class="cell" id="copyright">
-            <div>&copy; Fabio Eid Morooka. All rights reserved.</div>
+          <div class="cell text-center" id="footer-title">
+            <h4>Site Map</h4>
+            <hr>
+            <div class="grid-x grid-margin-x align-center-middle large-up-2 medium-up-2 small-up-1" id="footer-links">
+              <div class="cell shrink" id="footer-link-left">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-torso" aria-hidden="true"></i>
+                  <p><a href="pages/aboutMe.html">About Me</a></p>
+                </div>
+              </div>
+              <div class="cell shrink" id="footer-link-right">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-book" aria-hidden="true"></i>
+                  <p><a href="pages/education.html">Education</a></p>
+                </div>
+              </div>              
+              <div class="cell shrink" id="footer-link-left">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-lightbulb" aria-hidden="true"></i>
+                  <p><a href="#">Projects</a></p>
+                </div>  
+              </div>
+              <div class="cell shrink" id="footer-link-right">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-star" aria-hidden="true"></i>
+                  <p><a href="#">Skills</a></p>
+                </div>  
+              </div>
+              <div class="cell shrink" id="footer-link-left">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-trophy" aria-hidden="true"></i>
+                  <p><a href="#">Awards</a></p>
+                </div>  
+              </div>
+              <div class="cell shrink" id="footer-link-right">
+                <div class="my-website-footer-block align-center">
+                  <i class="fi-pencil" aria-hidden="true"></i>
+                  <p><a href="#">Blog</a></p>
+                </div>  
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div class="grid-container full" >
+      <div class="grid-x grid-margin-x small-up-1 large-up-1" id="copyright">
+        <div class="cell">
+          <div>&copy; 2019-2020 | Fabio Eid Morooka. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
 
     <!-- /Footer -->
 
