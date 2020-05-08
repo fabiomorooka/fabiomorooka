@@ -7,6 +7,7 @@
     <meta name="title" content="Enter in contact with me">
     <meta name="description" content="Different ways for contacting Fabio Eid Morooka">
     <title>About | Fabio Eid Morooka</title>
+    <link rel="stylesheet" href="../assets/css/icons/foundation-icons.css">
     <link rel="stylesheet" href="../assets/css/foundation.min.css">
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="shortcut icon" href="../assets/img/menu/logo.ico" type="image/x-icon"/>
@@ -21,7 +22,7 @@
     <div class="top-bar" data-sticky data-margin-top="0" id="menu-fixe">
       <div class="menu-text">
         <a href="/">
-              <img src="../assets/img/menu/menuImage.png" text = "website logo">
+          <img src="../assets/img/menu/menuImage.png" text = "website logo">
         </a>
       </div>
       <div class="top-bar-left">
@@ -50,117 +51,97 @@
     </div>
     <!-- /Navigation -->
 
-    <!-- Email forms -->
-    <div class = "grid-container" id="send-email">
-      <div class="grid-x grid-padding-x align-center">
-        <div class="cell large-9 medium-12 small-12">
-          <p class="h1 text-center">Leave a message</p>
+    <!-- Social Midia-->
+    <div class="grid-container full" id=social-media>
+      <div class="media-object align-center stack-for-small">
+        <div class="media-object-section hide-for-small-only">
+          <div class="thumbnail">
+            <img src="../assets/img/index/profilePicture.jpg" alt="Profile picture social media" width="300px">
+          </div>
+        </div>
+        <div class="media-object-section text-center">
+          <p class="h1">Social Media</p>
+          <div class="grid-container">
+            <div class="grid-x grid-margin-x">
+              <div class="cell">
+                <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank">
+                  <button type="button" class="button expanded large social facebook hide-for-small-only">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> Facebook 
+                  </button>
+                  <button type="button" class="button expanded social facebook show-for-small-only">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> Facebook 
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+              <div class="cell">
+                <a href="https://www.instagram.com/fabio.eid/" target="_blank">
+                  <button type="button" class="button expanded large social instagram hide-for-small-only">
+                    <i class="fa fa-instagram" aria-hidden="true"></i> Instagram 
+                  </button>
+                  <button type="button" class="button expanded social instagram show-for-small-only">
+                    <i class="fa fa-instagram" aria-hidden="true"></i> Instagram 
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+              <div class="cell">
+                <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">
+                  <button type="button" class="button expanded large social linkedin hide-for-small-only">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin 
+                  </button>
+                  <button type="button" class="button expanded social linkedin show-for-small-only">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin 
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="grid-x grid-margin-x">
+              <div class="cell">
+                <a href="https://github.com/fabiomorooka" target="_blank">
+                  <button type="button" class="button expanded large social github hide-for-small-only">
+                    <i class="fa fa-github" aria-hidden="true"></i> Github 
+                  </button>
+                  <button type="button" class="button expanded social github show-for-small-only">
+                    <i class="fa fa-github" aria-hidden="true"></i> Github 
+                  </button>  
+                </a>
+              </div>
+            </div>
+          </div> 
         </div>
       </div>
+    </div> 
 
+    <!-- /Social Midia -->
+
+    <!-- Email forms -->
+    <div class = "grid-container full" id="send-email">
       <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST">
         <div class="grid-container">
           <div class="grid-x grid-padding-x align-center">
-            <div class="cell large-1 medium-2 small-2">
-              <label id="info-forms" for="guest-name" class="h5 text-right">Name*</label>
-            </div>
-            <div class="cell large-8 medium-10 small-10">
-              <input type="text" id="guest-name" autocomplete="name" required="" placeholder="">
-            </div>
-          </div>
-
-          <div class="grid-x grid-padding-x align-center">
-            <div class="cell large-1 medium-2 small-2">
-              <label id="info-forms" for="guest-email" class="h5 text-right">Email*</label>
-            </div>
-            <div class="cell large-8 medium-10 small-10">
-              <input type="email" name="_replyto" id="guest-email" autocomplete="email" required="" placeholder="">
-            </div>
-          </div>
-
-          <div class="grid-x grid-padding-x align-center">
-            <div class="cell large-1 medium-2 small-2">
-              <label id="info-forms" for="guest-message" class="h5 text-right">Message*</label>
-            </div>
-            <div class="cell large-8 medium-10 small-10">
-              <textarea name="message" type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
+            <div class="cell">   
+              <div class="send-email-form">
+                <h4 class="text-center">Leave me a message</h4>
+                <label for="send-email-form-username">Name*</label>
+                <input type="text" class="send-email-form-username" id="guest-name" autocomplete="name" required="" placeholder="">
+                <label for="send-email-form-password">Email*</label>
+                <input type="email" class="send-email-form-password" name="_replyto" id="guest-email" autocomplete="email" required="" placeholder="">
+                <div class="cell large-8 medium-10 small-10">
+                  <label for="send-email-form-password">Message*</label>
+                  <textarea name="message" rows="7" class="send-email-form-message" type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
+                </div>
+                <button type="submit" class="alert send-email-form-button">Send e-mail</button>
+              </div>
             </div>
           </div>
-
-          <div class="grid-x grid-padding-x align-center">
-            <div class="cell large-1 medium-2 small-2">
-            </div>
-            <div class="cell large-8 medium-10 small-10">
-              <button type="submit" id="submit-button" class="submit success button expanded">Click here to send your message!</button>
-            </div>
-          </div>
-        </div>  
+        </div>
       </form>
     </div>
 
     <!-- /Email forms -->
-
-    <!-- Social Midia-->
-<!--    <div class="grid-container">
-        <div class="media-object align-center stack-for-small">
-          <div class="media-object-section">
-            <div class="thumbnail">
-              <img src="../assets/img/index/profilePicture.jpg" alt="Profile picture social media" width="350px">
-            </div>
-          </div>
-          <div class="media-object-section hide-for-small">
-            <p class="h1">Social Media</p>
-            <div class="grid-container">
-              <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-                <div class="cell">
-                  <div class="card">
-                    <div class="card-section">
-                      <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank">
-                        <img src="../assets/img/contact/facebook.svg">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell">
-                  <div class="card">
-                    <div class="card-section">
-                      <a href="https://www.instagram.com/fabio.eid/" target="_blank">
-                        <img src="../assets/img/contact/instagram.svg">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="cell">
-                  <div class="card">
-                    <div class="card-section">
-                      <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">
-                        <img src="../assets/img/contact/linkedin.svg">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <p class="h1">Contact Information</p>
-            <div class="grid-container">
-              <div class="grid-x grid-margin-x small-up-2 medium-up-3"> 
-                <div class="card">
-                  <div class="card-section">
-                    <p class="h5">Phone number: +33 (0)7 69 53 71 25</p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-section">
-                    <p class="h5">E-mail: fabio.morooka@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- /Social Midia -->
 
     <!-- Footer -->
     <footer>
