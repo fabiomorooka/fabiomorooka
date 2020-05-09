@@ -14,21 +14,24 @@
   </head>
   <body>
     <!-- Navigation -->
+    <!-- Mobile Header -->
     <div class="title-bar" data-responsive-toggle="menu-fixe" data-hide-for="medium" id="menu-hide">
       <button class="menu-icon" type="button" data-toggle="menu-fixe"></button>
       <div class="title-bar-title">Menu</div>
     </div>
+    <!-- /Mobile Header -->
 
-    <div class="top-bar" data-sticky data-margin-top="0" id="menu-fixe">
-      <div class="menu-text hide-for-small-only">
+    <!-- Web Header -->
+    <div class="top-bar" id="menu-fixe">
+      <div class="menu-text hide-for-small-only hide-for-medium-only">
         <a href="/">
           <img src="../assets/img/menu/menuImage.png" text = "website logo">
         </a>
       </div>
-      <div class="top-bar-left">
+      <div class="top-bar-right">
         <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="menu-drop">
-        <li><a href="/">Home</a></li>
-        <li><a href="aboutMe.html">About Me</a></li> 
+          <li><a href="/">Home</a></li> 
+          <li><a href="aboutMe.html">About Me</a></li>
           <li>
             <a href="education.html">Education</a>
             <ul class="nested vertical menu" id="menu-drop" data-magellan>
@@ -44,12 +47,13 @@
           <li>
             <a href="contact.html">Contact</a>
             <ul class="nested vertical menu" id="menu-drop" data-magellan>
-              <li><a href="#send-email">Write an e-mail</a></li>
+              <li><a href="contact.html#send-email">Write an e-mail</a></li>
             </ul>
           </li>
         </ul>
       </div>
     </div>
+    <!-- /Web Header -->
     <!-- /Navigation -->
 
     <!-- Social midia section -->
