@@ -318,7 +318,7 @@ footer a:hover, #footer-contact:hover{
 }
 
 #copyright{
-  background-color: #555;
+  background-color: #2c3840;
   color: white;
   text-align: center;
   padding: 15px 0px;
@@ -635,6 +635,7 @@ footer a:hover, #footer-contact:hover{
   padding: 15px 0px 0px;
   border-bottom: 0.125rem solid #1779ba;
   text-transform: uppercase;
+  margin-bottom: 1.25rem;
 }
 
 .profile-section-header-description {
@@ -645,7 +646,7 @@ footer a:hover, #footer-contact:hover{
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
+  margin: 0 0 0.25rem 0;
   padding: 15px 0px 0px;
 }
 
@@ -770,7 +771,7 @@ footer a:hover, #footer-contact:hover{
   background-color: #e6e6e6;
 }
 
-.article-row-section {
+.life-section {
   max-width: 75rem;
   margin-right: auto;
   margin-left: auto;
@@ -785,7 +786,7 @@ footer a:hover, #footer-contact:hover{
           justify-content: center;
 }
 
-.article-row-section-inner {
+.life-section-inner {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -796,14 +797,14 @@ footer a:hover, #footer-contact:hover{
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row-section-inner {
+  .life-section-inner {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row-section-inner {
+  .life-section-inner {
     -webkit-flex: 0 0 83.33333%;
         -ms-flex: 0 0 83.33333%;
             flex: 0 0 83.33333%;
@@ -815,20 +816,20 @@ footer a:hover, #footer-contact:hover{
 }
 
 @media print, screen and (min-width: 40em) and (min-width: 40em) {
-  .article-row-section-inner {
+  .life-section-inner {
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
   }
 }
 
-.article-row-section-header {
+.life-section-header {
   padding: 1.5rem 0;
   margin: 0;
   line-height: 1;
   text-align: center;
 }
 
-.article-row {
+.life {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -840,58 +841,58 @@ footer a:hover, #footer-contact:hover{
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row {
+  .life {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
   }
 }
 
-.article-row-img img {
+.life-img img {
   width: 100%;
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row-img img {
+  .life-img img {
     max-width: none;
     width: auto;
   }
 }
 
-.article-row-content {
+.life-content {
   padding: 1.5rem 0 0;
   color: #0a0a0a;
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row-content {
+  .life-content {
     padding: 0 0 0 1.5rem;
   }
 }
 
-.article-row-content-header {
+.life-content-header {
   font-size: 1.5rem;
 }
 
-.article-row-content-description {
+.life-content-description {
   font-size: 1.25rem;
 }
 
-.article-row-content-author,
-.article-row-content-time {
+.life-content-author,
+.life-content-time {
   font-size: 0.875rem;
   margin-bottom: 0;
   color: #8a8a8a;
 }
 
-.article-row-reversed .article-row-content {
+.life-reversed .life-content {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2;
   padding: 0 1.5rem 0 0;
 }
 
-.article-row-reversed .article-row-img {
+.life-reversed .life-img {
   -webkit-order: 1;
       -ms-flex-order: 1;
           order: 1;
@@ -899,35 +900,35 @@ footer a:hover, #footer-contact:hover{
 }
 
 @media print, screen and (min-width: 40em) {
-  .article-row-reversed .article-row-content {
+  .life-reversed .life-content {
     -webkit-order: 1;
         -ms-flex-order: 1;
             order: 1;
   }
-  .article-row-reversed .article-row-img {
+  .life-reversed .life-img {
     -webkit-order: 2;
         -ms-flex-order: 2;
             order: 2;
   }
 }
 
-/* Depoiments section */
-.featured-testimonials-section {
+/* Testimonials section */
+.testimonials-section {
   background: #d6d6d6;
   padding: 2rem 1rem;
 }
 
-.featured-testimonials-section .featured-testimonials-container .orbit-previous {
+.testimonials-section .testimonials-container .orbit-previous {
   color: #0a0a0a;
   left: -1rem;
 }
 
-.featured-testimonials-section .featured-testimonials-container .orbit-next {
+.testimonials-section .testimonials-container .orbit-next {
   color: #0a0a0a;
   right: -1rem;
 }
 
-.featured-testimonials-section .testimonial {
+.testimonials-section .testimonial {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -937,19 +938,19 @@ footer a:hover, #footer-contact:hover{
   margin: 2rem 1rem;
 }
 
-.featured-testimonials-section .profile-pic {
+.testimonials-section .profile-pic {
   max-width: 100px;
   border-radius: 50%;
 }
 
-.featured-testimonials-section .featured-testimonials-quotation {
+.testimonials-section .testimonials-quotation {
   margin-left: 3rem;
   margin-bottom: 0rem;
   padding: 1rem;
   position: relative;
 }
 
-.featured-testimonials-section .featured-testimonials-quotation::before {
+.testimonials-section .testimonials-quotation::before {
   content: "“";
   font-size: 5rem;
   color: #b6b6b6;
@@ -958,7 +959,7 @@ footer a:hover, #footer-contact:hover{
   left: -1.5rem;
 }
 
-.featured-testimonials-section .featured-testimonials-quotation::after {
+.testimonials-section .testimonials-quotation::after {
   content: "”";
   font-size: 5rem;
   color: #b6b6b6;
@@ -968,7 +969,7 @@ footer a:hover, #footer-contact:hover{
 }
 
 @media screen and (max-width: 39.9375em) {
-  .featured-testimonials-section .featured-testimonials-quotation {
+  .testimonials-section .testimonials-quotation {
     margin-left: 0;
   }
 }
@@ -976,3 +977,8 @@ footer a:hover, #footer-contact:hover{
 #testimonial-author{
   color: black;
 }
+
+/* Education Page */
+
+
+
