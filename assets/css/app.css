@@ -11,6 +11,7 @@
 /* Menu bar */
 #menu-fixe, #menu-drop{
   background-color: rgb(0,102,162);
+  z-index: 1;
 }
 
 #menu-drop a{

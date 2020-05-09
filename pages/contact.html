@@ -20,7 +20,7 @@
     </div>
 
     <div class="top-bar" data-sticky data-margin-top="0" id="menu-fixe">
-      <div class="menu-text">
+      <div class="menu-text hide-for-small-only">
         <a href="/">
           <img src="../assets/img/menu/menuImage.png" text = "website logo">
         </a>
@@ -31,10 +31,10 @@
         <li><a href="aboutMe.html">About Me</a></li> 
           <li>
             <a href="education.html">Education</a>
-            <ul class="nested vertical menu" id="menu-drop">
-              <li><a href="#">High School</a></li>
-              <li><a href="#">University</a></li>
-              <li><a href="#">Double Degree</a></li>
+            <ul class="nested vertical menu" id="menu-drop" data-magellan>
+              <li><a href="education.html#high-school-section">High School</a></li>
+              <li><a href="education.html#university-section">University</a></li>
+              <li><a href="education.html#university-france-section">Double Degree</a></li>
             </ul>
           </li>
           <li><a href="#">Projects</a></li>
@@ -119,7 +119,7 @@
     <!-- /Social midia section -->
 
     <!-- Email forms section -->
-    <div class = "grid-container full" id="send-email">
+    <div class = "grid-container full" id="send-email" data-magellan-target="send-email">
       <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST">
         <div class="grid-container">
           <div class="grid-x grid-padding-x align-center">
@@ -166,7 +166,7 @@
               </div>
               <div class="my-website-footer-block">
                 <i class="fi-pencil" aria-hidden="true"></i>
-                <p><a href="contact.html">Send me a message!</a></p>
+                <p><a href="contact.html#send-email">Send me a message!</a></p>
               </div>
             </div>
           </div>
