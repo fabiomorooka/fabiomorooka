@@ -40,7 +40,13 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Skills</a></li>
           <li><a href="#">Awards</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Blog</a></li>
+          <li>
+            <a href="contact.html">Contact</a>
+            <ul class="nested vertical menu" id="menu-drop" data-magellan>
+              <li><a href="#send-email">Write an e-mail</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -51,11 +57,11 @@
       <img class="profile-section-header-logo" src="../assets/img/aboutMe/profilePictureCircle.png" width="200px" />
       <p class="h2" id="profile-title">My Profile</p>
       <ul class="profile-section-header-description menu-hover-lines">
-        <li><a href="#">Download my curriculum</a></li>
-        <li><a href="#">Dicover who I am</a></li>
-        <li><a href="#">What people talk about me</a></li>
+        <li><a href="#download-cv">Download my curriculum</a></li>
+        <li><a href="#discover-section">Discover who I am</a></li>
+        <li><a href="#testimonials-section">What people talk about me</a></li>
       </ul>
-      <ul class="profile-section-header-menu">
+      <ul class="profile-section-header-menu" id="download-cv" testimonials-section="download-cv">
         <li><a class="button alert" href="../assets/files/aboutMe/[EN] CV_Morooka_FabioEid.pdf" download target="_blank">English</a></li>
         <li><a class="button primary" href="../assets/files/aboutMe/[FR] CV_Morooka_FabioEid.pdf" download target="_blank">French</a></li>
         <li><a class="button success" href="#" id="pt-button">Portuguese</a></li>
@@ -86,7 +92,7 @@
     <!-- /Profile Section-->
 
     <!-- Dicover more about me Section -->
-    <div class="grid-container full" id="discover-section">
+    <div class="grid-container full" id="discover-section" data-magellan-target="discover-section">
       <div class="article-row-section">
         <div class="article-row-section-inner">
           <a href="#">
@@ -144,21 +150,25 @@
     <!-- /Dicover more about me Section -->
 
     <!-- Depoiments Section -->
-    <div class="featured-testimonials-section">
+    <div class="featured-testimonials-section" id="testimonials-section" data-magellan-target="testimonials-section">
       <div class="grid-x grid-margin-x align-center">
-        <h1>Featured In</h1>
+        <h1>Testimonials</h1>
       </div>
       <div class="featured-testimonials grid-x grid-margin-x">
         <div class="small-12 medium-6 cell">
           <div class="testimonial">
             <img class="profile-pic hide-for-small-only" src="https://unsplash.it/201/?random">
-            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.</p>
+            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.
+            <cite class="h6" id="testimonial-author">Isaac Asimov</cite>
+            </p>
           </div>
         </div>
         <div class="small-12 medium-6 cell">
           <div class="testimonial">
             <img class="profile-pic hide-for-small-only" src="https://unsplash.it/202/?random">
-            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.</p>
+            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.
+            <cite class="h6" id="testimonial-author">Isaac Asimov</cite>
+            </p>
           </div>
         </div>
       </div>
@@ -166,13 +176,17 @@
         <div class="small-12 medium-6 cell">
           <div class="testimonial">
             <img class="profile-pic hide-for-small-only" src="https://unsplash.it/203/?random">
-            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.</p>
+            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.
+            <cite class="h6" id="testimonial-author">Isaac Asimov</cite>
+            </p>
           </div>
         </div>
         <div class="small-12 medium-6 cell">
           <div class="testimonial">
             <img class="profile-pic hide-for-small-only" src="https://unsplash.it/204/?random">
-            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.</p>
+            <p class="featured-testimonials-quotation">Hide when guests come over instantly break out into full speed make cat go crazy. Meow mix meow meow cat things and purring. catnip.
+            <cite class="h6" id="testimonial-author">Isaac Asimov</cite>
+            </p>
           </div>
         </div>
       </div>
