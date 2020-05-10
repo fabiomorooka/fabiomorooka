@@ -62,25 +62,25 @@
         <p class="h2 project-intro-headline">Projects Domains</p>
         <div class="grid-x grid-margin-x large-up-4 medium-up-2 small-up-1">
           <div class="cell" id="project-type-intro">
-            <i class="fa fa-gg" aria-hidden="true"></i>
+            <i class="fi fi-laptop" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Programming</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
              <a href="#" class="round button">Know more</a>
           </div>
           <div class="cell" id="project-type-intro">
-            <i class="fa fa-user-o" aria-hidden="true"></i>
+            <i class="fi fi-battery-full" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Electronics</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
              <a href="#" class="round button">Know more</a>
           </div>
           <div class="cell" id="project-type-intro">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <i class="fi fi-puzzle" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Embedded Systems</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
              <a href="#" class="round button">Know more</a>
           </div>
           <div class="cell" id="project-type-intro">
-            <i class="fa fa-check-square-o" aria-hidden="true"></i>
+            <i class="fi fi-torso-business" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Entrepreneur</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
              <a href="#" class="round button">Know more</a>
@@ -99,7 +99,7 @@
         </div>
       </article>
     </div>
-    <article class="grid-container">
+    <article class="grid-container" id="projects-cards-list">
       <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-4">
         <div class="cell">
           <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
@@ -110,7 +110,21 @@
               <div class="flip-card-inner-back">
                 <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
                 <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
+              </div>
+            </div>''
+          </div>
+        </div>
+        <div class="cell">
+          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-card-inner">
+              <div class="flip-card-inner-front">
+                <span>Book your next adventure</span>
+              </div>
+              <div class="flip-card-inner-back">
+                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
               </div>
             </div>
           </div>
@@ -124,7 +138,7 @@
               <div class="flip-card-inner-back">
                 <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
                 <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
               </div>
             </div>
           </div>
@@ -138,21 +152,7 @@
               <div class="flip-card-inner-back">
                 <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
                 <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Book your next adventure</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
-                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
               </div>
             </div>
           </div>
@@ -160,6 +160,35 @@
       </div> 
     </article>
     <!-- /Programming Projects Section-->
+
+    <!-- Programming Projects cards -->
+    <div class="reveal large" id="test-model-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
+      <h1>Awesome. I Have It.</h1>
+      <p class="lead">Your couch. It is mine.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
+      <div class="work-feature-block grid-x grid-margin-x ">
+        <div class="cell large-5">
+          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+        </div>
+        <div class="cell medium-12 large-7">
+          <h2 class="work-feature-block-header">Project Description</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+          <h2>Project Details</h2>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <!-- /Programming Projects cards -->
 
     <!-- Electronics Projects Section-->
     <div class="callout primary">
@@ -170,7 +199,7 @@
         </div>
       </article>
     </div>
-    <article class="grid-container">
+    <article class="grid-container" id="projects-cards-list">
       <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
         <div class="cell">
           <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
@@ -181,7 +210,7 @@
               <div class="flip-card-inner-back">
                 <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
                 <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
               </div>
             </div>
           </div>
@@ -195,7 +224,7 @@
               <div class="flip-card-inner-back">
                 <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
                 <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
-                <a href="#" class="button success">Book now</a>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
               </div>
             </div>
           </div>
