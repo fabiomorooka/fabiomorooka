@@ -34,19 +34,27 @@
           <li><a href="aboutMe.html">About Me</a></li>
           <li>
             <a href="education.html">Education</a>
-            <ul class="nested vertical menu" id="menu-drop" data-magellan>
+            <ul class="nested vertical menu" id="menu-drop">
               <li><a href="education.html#high-school-section">High School</a></li>
               <li><a href="education.html#university-section">University</a></li>
               <li><a href="education.html#university-france-section">Double Degree</a></li>
             </ul>
           </li>
-          <li><a href="projects.html">Projects</a></li>
+          <li>
+            <a href="projects.html">Projects</a>
+            <ul class="nested vertical menu" id="menu-drop">
+              <li><a href="projects.html#programming-section">Programming</a></li>
+              <li><a href="projects.html#embedded-systems-section">Embedded Systems</a></li>
+              <li><a href="projects.html#entrepreneurship-section">Entrepreneurship</a></li>
+              <li><a href="projects.html#mechatronics-section">Mechatronics</a></li>
+            </ul>
+          </li>
           <li><a href="skills.html">Skills</a></li>
           <li><a href="awards.html">Awards</a></li>
           <li><a href="#">Blog</a></li>
           <li>
             <a href="contact.html">Contact</a>
-            <ul class="nested vertical menu" id="menu-drop" data-magellan>
+            <ul class="nested vertical menu" id="menu-drop">
               <li><a href="contact.html#send-email">Write an e-mail</a></li>
             </ul>
           </li>
@@ -65,25 +73,25 @@
             <i class="fi fi-laptop" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Programming</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
-             <a href="#" class="round button">Know more</a>
+             <a href="#programming-section" class="round button">Know more</a>
           </div>
           <div class="cell" id="project-type-intro">
             <i class="fi fi-battery-full" aria-hidden="true"></i>
-            <p class="h4 project-intro-title">Electronics</p>
-            <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
-             <a href="#" class="round button">Know more</a>
-          </div>
-          <div class="cell" id="project-type-intro">
-            <i class="fi fi-puzzle" aria-hidden="true"></i>
             <p class="h4 project-intro-title">Embedded Systems</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
-             <a href="#" class="round button">Know more</a>
+             <a href="#embedded-systems-section" class="round button">Know more</a>
           </div>
           <div class="cell" id="project-type-intro">
             <i class="fi fi-torso-business" aria-hidden="true"></i>
-            <p class="h4 project-intro-title">Entrepenership</p>
+            <p class="h4 project-intro-title">Entrepreneurship</p>
             <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
-             <a href="#" class="round button">Know more</a>
+             <a href="#entrepreneurship-section" class="round button">Know more</a>
+          </div>
+          <div class="cell" id="project-type-intro">
+            <i class="fi fi-widget" aria-hidden="true"></i>
+            <p class="h4 project-intro-title">Mechatronics</p>
+            <p class="h6 project-intro-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sint, voluptatibus eaque natus ad eius.</p>
+             <a href="#mechatronics-section" class="round button">Know more</a>
           </div>
         </div>
       </section>
@@ -91,7 +99,7 @@
     <!-- Projects Area Section -->
 
     <!-- Programming Projects Section-->
-    <div class="callout primary" >
+    <div class="callout primary" id="programming-section" data-magellan-target="programming-section">
       <article class="grid-container">
         <div class="">
           <h1>Programming</h1>
@@ -190,11 +198,11 @@
 
     <!-- /Programming Projects cards -->
 
-    <!-- Electronics Projects Section-->
-    <div class="callout primary">
+    <!-- Embedded Systems Projects Section-->
+    <div class="callout primary" id="embedded-systems-section" data-magellan-target="embedded-systems-section">
       <article class="grid-container">
         <div class="">
-          <h1>Electronics</h1>
+          <h1>Embedded Systems</h1>
           <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
         </div>
       </article>
@@ -231,7 +239,180 @@
         </div>
       </div> 
     </article>
-    <!-- /Electronics Projects Section-->
+    <!-- /Embedded Systems Projects Section-->
+
+    <!-- Embedded Systems Projects cards -->
+    <div class="reveal large" id="test-model-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
+      <h1>Awesome. I Have It.</h1>
+      <p class="lead">Your couch. It is mine.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
+      <div class="work-feature-block grid-x grid-margin-x ">
+        <div class="cell large-5">
+          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+        </div>
+        <div class="cell medium-12 large-7">
+          <h2 class="work-feature-block-header">Project Description</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+          <h2>Project Details</h2>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <!-- /Embedded Systems Projects cards -->
+
+    <!-- Entrepenership Projects Section-->
+    <div class="callout primary" id="entrepreneurship-section" data-magellan-target="entrepreneurship-section">
+      <article class="grid-container">
+        <div class="">
+          <h1>Entrepreneurship</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+        </div>
+      </article>
+    </div>
+    <article class="grid-container" id="projects-cards-list">
+      <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+        <div class="cell">
+          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-card-inner">
+              <div class="flip-card-inner-front">
+                <span>Book your next adventure</span>
+              </div>
+              <div class="flip-card-inner-back">
+                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-card-inner">
+              <div class="flip-card-inner-front">
+                <span>Book your next adventure</span>
+              </div>
+              <div class="flip-card-inner-back">
+                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </article>
+    <!-- /Entrepenership Projects Section-->
+
+    <!-- Entrepenership Projects cards -->
+    <div class="reveal large" id="test-model-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
+      <h1>Awesome. I Have It.</h1>
+      <p class="lead">Your couch. It is mine.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
+      <div class="work-feature-block grid-x grid-margin-x ">
+        <div class="cell large-5">
+          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+        </div>
+        <div class="cell medium-12 large-7">
+          <h2 class="work-feature-block-header">Project Description</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+          <h2>Project Details</h2>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <!-- /Entrepenership Projects cards -->
+
+    <!-- Mechatronics Projects Section-->
+    <div class="callout primary" id="mechatronics-section" data-magellan-target="mechatronics-section">
+      <article class="grid-container">
+        <div class="">
+          <h1>Mechatronics</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
+        </div>
+      </article>
+    </div>
+    <article class="grid-container" id="projects-cards-list">
+      <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
+        <div class="cell">
+          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-card-inner">
+              <div class="flip-card-inner-front">
+                <span>Book your next adventure</span>
+              </div>
+              <div class="flip-card-inner-back">
+                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+            <div class="flip-card-inner">
+              <div class="flip-card-inner-front">
+                <span>Book your next adventure</span>
+              </div>
+              <div class="flip-card-inner-back">
+                <h3 class="flip-card-inner-back-title">Visit Yetiland</h3>
+                <p class="flip-card-inner-back-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo doloremque accusantium, repellendus ex debitis molestias, recusandae dignissimos delectus.</p>
+                <button class="button round success" data-open="test-model-card" id="button-project-details">Book now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </article>
+    <!-- /Mechatronics Projects Section-->
+
+    <!-- Mechatronics Projects cards -->
+    <div class="reveal large" id="test-model-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
+      <h1>Awesome. I Have It.</h1>
+      <p class="lead">Your couch. It is mine.</p>
+      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
+      <div class="work-feature-block grid-x grid-margin-x ">
+        <div class="cell large-5">
+          <img class="work-feature-block-image" src="https://placehold.it/600x400"/>
+        </div>
+        <div class="cell medium-12 large-7">
+          <h2 class="work-feature-block-header">Project Description</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
+          <h2>Project Details</h2>
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+          </ul>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+
+    <!-- /Mechatronics Projects cards -->
     
     <!-- Footer -->
     <footer>
