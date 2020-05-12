@@ -22,43 +22,45 @@
     <!-- /Mobile Header -->
 
     <!-- Web Header -->
-    <div class="top-bar menu-fixe" id="menu-fixe">
-      <div class="menu-text hide-for-small-only hide-for-medium-only">
-        <a href="/">
-          <img src="../assets/img/menu/menuImage.png" text = "website logo">
-        </a>
-      </div>
-      <div class="top-bar-right">
-        <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="menu-drop">
-          <li><a href="/">Home</a></li> 
-          <li><a href="aboutMe.html">About Me</a></li>
-          <li>
-            <a href="education.html">Education</a>
-            <ul class="nested vertical menu" id="menu-drop">
-              <li><a href="education.html#high-school-section">High School</a></li>
-              <li><a href="education.html#university-section">University</a></li>
-              <li><a href="education.html#university-france-section">Double Degree</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="projects.html">Projects</a>
-            <ul class="nested vertical menu" id="menu-drop">
-              <li><a href="projects.html#programming-section">Programming</a></li>
-              <li><a href="projects.html#embedded-systems-section">Embedded Systems</a></li>
-              <li><a href="projects.html#entrepreneurship-section">Entrepreneurship</a></li>
-              <li><a href="projects.html#mechatronics-section">Mechatronics</a></li>
-            </ul>
-          </li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="awards.html">Awards</a></li>
-          <li><a href="#">Blog</a></li>
-          <li>
-            <a href="contact.html">Contact</a>
-            <ul class="nested vertical menu" id="menu-drop">
-              <li><a href="contact.html#send-email">Write an e-mail</a></li>
-            </ul>
-          </li>
-        </ul>
+    <div data-sticky-container>
+      <div class="top-bar menu-fixe" data-sticky data-options="marginTop:0;" data-top-anchor="1" data-btm-anchor="final-footer:top" id="menu-fixe">
+        <div class="menu-text hide-for-small-only hide-for-medium-only">
+          <a href="/">
+            <img src="../assets/img/menu/menuImage.png" text = "website logo">
+          </a>
+        </div>
+        <div class="top-bar-right  menu-drop">
+          <ul class="dropdown menu" data-responsive-menu="accordion medium-dropdown" id="menu-drop">
+            <li><a href="/">Home</a></li> 
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li>
+              <a href="education.html">Education</a>
+              <ul class="nested vertical menu" id="menu-drop" >
+                <li><a href="education.html#high-school-section">High School</a></li>
+                <li><a href="education.html#university-section">University</a></li>
+                <li><a href="education.html#university-france-section">Double Degree</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+              <ul class="nested vertical menu" id="menu-drop" >
+                <li><a href="projects.html#programming-section">Programming</a></li>
+                <li><a href="projects.html#embedded-systems-section">Embedded Systems</a></li>
+                <li><a href="projects.html#entrepreneurship-section">Entrepreneurship</a></li>
+                <li><a href="projects.html#mechatronics-section">Mechatronics</a></li>
+              </ul>
+            </li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="#">Blog</a></li>
+            <li>
+              <a href="contact.html">Contact</a>
+              <ul class="nested vertical menu" id="menu-drop" >
+                <li><a href="contact.html#send-email">Write an e-mail</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- /Web Header -->
@@ -415,7 +417,7 @@
     <!-- /Mechatronics Projects cards -->
     
     <!-- Footer -->
-    <footer>
+    <footer id="final-footer">
       <div class="grid-container">
         <div class="grid-x grid-margin-x small-up-1 large-up-3">
           <div class="cell text-center" id="footer-title">

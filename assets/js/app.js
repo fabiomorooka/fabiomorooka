@@ -5,7 +5,7 @@ $(window).scroll(function() {
      //console.log(scroll);
     if (scroll >= 100) {
         //console.log('a');
-        $(".top-bar").removeClass("menu-fixe").addClass("menu-scroll");
+        $(".top-bar").removeClass("menu-fixe").addClass("menu-scroll"); 
     } else {
         //console.log('a');
         $(".top-bar").removeClass("menu-scroll").addClass("menu-fixe");

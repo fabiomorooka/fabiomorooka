@@ -23,35 +23,55 @@
   }
 }
 
-.menu-fixe, .menu-drop{
-  background-color: rgb(33, 47, 61);
+.menu-fixe{
+  background-color: rgba(33, 47, 61); 
+  z-index: 1;
+  padding: 0.75rem 1.25rem;
+}
+
+.menu-drop{
+  background-color: inherit;
   z-index: 1;
   padding: 0.75rem 1.25rem;
 }
 
 #menu-drop{
-  background-color: rgb(33, 47, 61);
+  background-color: inherit;
+}
+
+.menu-drop a{
+  background-color: rgba(33, 47, 61);
+  color: white;
+  padding-left: 0.5rem;
+}
+
+.menu-drop a:hover{
+  color: #17a9fa;
+  border-bottom: 0.2rem solid #1779ba; 
 }
 
 .menu-scroll{
-  background-color: rgba(33, 47, 61, 0.5);
+  background-color: #ffffff;
+  color: black;
   z-index: 1;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 3rem;
 }
 
-#menu-drop a{
-  color: white;
-  padding-left: 0.5rem;
+.menu-scroll a{
+  background-color: #ffffff;
+  color: black;
+}
+
+.menu-scroll a:hover{
+  color: #17a9fa;
+  border-bottom: 0.2rem solid #1779ba; 
 }
 
 #menu-hide{
   background-color: rgb(33, 47, 61);
 }
 
-#menu-drop a:hover{
-  color: #17a9fa;
-  border-bottom: 0.2rem solid #1779ba; 
-}
+
 
 /* Footer section */
 footer{
@@ -427,7 +447,7 @@ footer a:hover, #footer-contact:hover{
 
 /* News section */
 #news{
-  background-color: #d6d6d6;
+  background-color: #fefefe;
   padding: 25px 15px; 
   color: black;
 }
@@ -463,13 +483,13 @@ footer a:hover, #footer-contact:hover{
 /* Email forms section */
 #send-email{
   padding: 25px 0px;
-  background-color: #d6d6d6; 
+  background-color: #fefefe; 
 }
 
 .send-email-form {
   padding: 1rem 1.5em;
   border-radius: .5rem;
-  background-color: #d6d6d6;
+  background-color: #fefefe;
 }
 
 .send-email-form h4 {
@@ -488,7 +508,7 @@ footer a:hover, #footer-contact:hover{
 
 .send-email-form input {
   color: white;
-  background-color: #7d859f;
+  background-color: #7e7e7e;
 }
 
 .send-email-form input:focus {
@@ -498,7 +518,7 @@ footer a:hover, #footer-contact:hover{
 
 .send-email-form textarea {
   color: white;
-  background-color: #7d859f;
+  background-color: #7e7e7e;
 }
 
 .send-email-form textarea:focus {
@@ -523,7 +543,7 @@ footer a:hover, #footer-contact:hover{
 
 .send-email-form-button {
   border-radius: 30px;
-  border: 1px solid #3d454f;
+  border: 1px solid #666;
   color: #3d454f;
   background-color: transparent;
   text-transform: uppercase;
@@ -534,8 +554,8 @@ footer a:hover, #footer-contact:hover{
 }
 
 .send-email-form-button:hover {
-  background-color: #7d859f;
-  border-color: #7d859f;
+  background-color: #7e7e7e;
+  border-color: #7e7e7e;
   color: white
 }
 
@@ -778,7 +798,7 @@ footer a:hover, #footer-contact:hover{
 /* Discover more about me */
 
 #discover-section{
-  background-color: #e6e6e6;
+  background-color: #fefefe;
 }
 
 .life-section {
@@ -925,7 +945,7 @@ footer a:hover, #footer-contact:hover{
 /* Testimonials section */
 .testimonials-section {
   background: #d6d6d6;
-  padding: 2rem 10rem;
+  padding: 2rem 7rem;
 }
 
 .testimonials-section .testimonials-container .orbit-previous {
