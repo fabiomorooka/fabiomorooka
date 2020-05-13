@@ -3,7 +3,7 @@ $(document).foundation()
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
      //console.log(scroll);
-    if (scroll >= 100) {
+    if (scroll >= 400) {
         //console.log('a');
         $(".top-bar").removeClass("menu-fixe").addClass("menu-scroll"); 
     } else {

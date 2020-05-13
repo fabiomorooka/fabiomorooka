@@ -51,14 +51,17 @@
 }
 
 .menu-scroll{
-  background-color: #ffffff;
+  background-color: rgba(215, 215, 215);
   color: black;
-  z-index: 1;
-  padding: 0.75rem 3rem;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  bottom: 0;
 }
 
 .menu-scroll a{
-  background-color: #ffffff;
+  background-color: rgba(215, 215, 215);
   color: black;
 }
 
@@ -482,7 +485,7 @@ footer a:hover, #footer-contact:hover{
 /* Contact page */
 /* Email forms section */
 #send-email{
-  padding: 25px 0px;
+  padding: 5rem 0rem;
   background-color: #fefefe; 
 }
 
@@ -1010,6 +1013,19 @@ footer a:hover, #footer-contact:hover{
 
 /* Projects Page */
 
+#programming-section{
+  padding: 5rem 0rem;
+}
+#embedded-systems-section{
+  padding: 5rem 0rem;
+}
+#entrepreneurship-section{
+  padding: 5rem 0rem;
+}
+#mechatronics-section{
+  padding: 5rem 0rem;
+}
+
 .project-intro {
   text-align: center;
   padding: 2rem 0rem;
@@ -1346,3 +1362,14 @@ footer a:hover, #footer-contact:hover{
   }
 }
 
+/*Education Page*/
+#high-school-section{
+  padding: 5rem 0rem;
+}
+#university-section{
+  padding: 5rem 0rem;
+}
+
+#university-france-section{
+  padding: 5rem 0rem;
+}
