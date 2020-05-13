@@ -1362,6 +1362,10 @@ footer a:hover, #footer-contact:hover{
   }
 }
 
+.switch-paddle{
+  border-radius: 5px;
+}
+
 /*Education Page*/
 #high-school-section{
   padding: 5rem 0rem;
