@@ -53,12 +53,7 @@
             <li><a href="skills.html">Skills</a></li>
             <li><a href="awards.html">Awards</a></li>
             <li><a href="#">Blog</a></li>
-            <li>
-              <a href="contact.html">Contact</a>
-              <ul class="nested vertical menu" id="menu-drop" >
-                <li><a href="contact.html#send-email">Write an e-mail</a></li>
-              </ul>
-            </li>
+            <li><a id="contact-button" href="contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -103,7 +98,7 @@
             <p class="h6">All Skills</p>
             <div class="switch">
               <input class="switch-input" id="all-checkbox" type="radio" checked name="skills-filter-button" onclick="ChangeFilter();">
-              <label class="switch-paddle" for="all-checkbox">
+              <label class="switch-paddle" for="all-checkbox" id="all-switch">
                 <span class="show-for-sr">all-checkbox</span>
                 <span class="switch-active" aria-hidden="true">Yes</span>
                 <span class="switch-inactive" aria-hidden="true">No</span>
@@ -112,10 +107,10 @@
           </div>
 
           <div class="cell text-center">
-           <p class="h6">Programming</p>
+           <p class="h6">Programming (Prog)</p>
            <div class="switch">
               <input class="switch-input" id="programming-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
-              <label class="switch-paddle" for="programming-checkbox">
+              <label class="switch-paddle" for="programming-checkbox" id="programming-switch">
                 <span class="show-for-sr">programming-checkbox</span>
                 <span class="switch-active" aria-hidden="true">Yes</span>
                 <span class="switch-inactive" aria-hidden="true">No</span>
@@ -124,10 +119,10 @@
           </div>
 
           <div class="cell text-center">
-            <p class="h6">Mechatronics</p>
+            <p class="h6">Mechatronics (Meca)</p>
             <div class="switch">
               <input class="switch-input" id="mechatronics-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
-              <label class="switch-paddle" for="mechatronics-checkbox">
+              <label class="switch-paddle" for="mechatronics-checkbox" id="mechatronics-switch">
                 <span class="show-for-sr">mechatronics-checkbox</span>
                 <span class="switch-active" aria-hidden="true">Yes</span>
                 <span class="switch-inactive" aria-hidden="true">No</span>
@@ -136,10 +131,10 @@
           </div>
 
           <div class="cell text-center">
-            <p class="h6">Embedded Systems</p>
+            <p class="h6">Embedded Systems (ES)</p>
             <div class="switch">
               <input class="switch-input" id="embedded-systems-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
-              <label class="switch-paddle" for="embedded-systems-checkbox">
+              <label class="switch-paddle" for="embedded-systems-checkbox" id="embedded-systems-switch">
                 <span class="show-for-sr">embedded-systems-checkbox</span>
                 <span class="switch-active" aria-hidden="true">Yes</span>
                 <span class="switch-inactive" aria-hidden="true">No</span>
@@ -148,10 +143,10 @@
           </div>
 
           <div class="cell text-center">
-            <p class="h6">Soft Skill</p>
+            <p class="h6">Soft Skill (SS)</p>
             <div class="switch">
               <input class="switch-input" id="soft-skill-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
-              <label class="switch-paddle" for="soft-skill-checkbox">
+              <label class="switch-paddle" for="soft-skill-checkbox" id="soft-skill-switch">
                 <span class="show-for-sr">soft-skill-checkbox</span>
                 <span class="switch-active" aria-hidden="true">Yes</span>
                 <span class="switch-inactive" aria-hidden="true">No</span>
@@ -163,118 +158,118 @@
     <hr>
 
     <!-- Skill cards -->
-    <div class="grid-container"> 
+    <div class="grid-container" id="skills-box"> 
       <div class="grid-x grid-margin-x large-up-4 medium-up-2 small-up-1">
 
         <div class="cell" id="soft-skill" style="display: block">
-          <div class="card-info success">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Soft Skill
+          <div class="skill-card primary">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                SS
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead"> Soft Skill</h3>
-              <p>In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
+            <div class="skill-card-content">
+              <p class="h4"> Presentation </p>
+              <p class="h6">In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="programming" style="display: block">
-          <div class="card-info primary">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Programming
+          <div class="skill-card success">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                Prog
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Programming</h3>
-              <p>A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
+            <div class="skill-card-content">
+              <p class="h4">Programming</p>
+              <p class="h6">A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="mechatronics" style="display: block">
-          <div class="card-info secondary">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Mechatronics
+          <div class="skill-card alert">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                Meca
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Mechatronics</h3>
-              <p>After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
+            <div class="skill-card-content">
+              <p class="h4">Mechatronics</p>
+              <p class="h6">After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="embedded-systems" style="display: block">
-          <div class="card-info info">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Embedded-Systems
+          <div class="skill-card warning">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                ES
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Embedded-Systems</h3>
-              <p>In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
+            <div class="skill-card-content">
+              <p class="h4">Embedded-Systems</p>
+              <p class="h6">In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
             </div>
           </div>
         </div>
 
        
         <div class="cell" id="soft-skill" style="display: block">
-          <div class="card-info success">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Soft Skill
+          <div class="skill-card primary">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                SS
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead"> Soft Skill</h3>
-              <p>In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
+            <div class="skill-card-content">
+              <p class="h4"> Soft Skill</p>
+              <p class="h6">In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="programming" style="display: block">
-          <div class="card-info primary">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Programming
+          <div class="skill-card success">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                Prog
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Programming</h3>
-              <p>A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
+            <div class="skill-card-content">
+              <p class="h4">Programming</p>
+              <p class="h6">A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="mechatronics" style="display: block">
-          <div class="card-info secondary">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Mechatronics
+          <div class="skill-card alert">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                Meca
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Mechatronics</h3>
-              <p>After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
+            <div class="skill-card-content">
+              <p class="h4">Mechatronics</p>
+              <p class="h6">After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
             </div>
           </div>
         </div>
 
         <div class="cell" id="embedded-systems" style="display: block">
-          <div class="card-info info">
-            <div class="card-info-label">
-              <div class="card-info-label-text">
-                Embedded-Systems
+          <div class="skill-card warning">
+            <div class="skill-card-label">
+              <div class="skill-card-label-text">
+                ES
               </div>
             </div>
-            <div class="card-info-content">
-              <h3 class="lead">Embedded-Systems</h3>
-              <p>In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
+            <div class="skill-card-content">
+              <p class="h4">Embedded-Systems</p>
+              <p class="h6">In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
             </div>
           </div>
         </div>
