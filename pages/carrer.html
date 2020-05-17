@@ -187,22 +187,20 @@
     <div class="grid-container full text-center align-center" id="awards" data-magellan-target="awards">
       <p class="h2">Awards and Events</p>
       <hr />
-      <div class="grid-margin-x grid-x large-up-4 medium-up-2 small-up-1">
+      <div class="grid-margin-x grid-x large-up-3 medium-up-3 small-up-1">
         <div class="cell" id="events-awards-number">
-          <span class="stat">10</span>
-          <p>Academic Olympiad Medals</p>
+          <span class="stat">12</span>
+          <p>Academic Olympiad Merits</p>
+          <p>(Medals, Honorable Mention, Judge)</p>
         </div>
         <div class="cell" id="events-awards-number">
-          <span class="stat">7</span>
-          <p>Events organisation/staff member</p>
+          <span class="stat">17</span>
+          <p>Events</p>
+          <p>(Organiser, Staff, Participant, Speaker, Exhibitor)</p>
         </div>
         <div class="cell" id="events-awards-number">
-          <span class="stat">5</span>
-          <p>Events participant</p>
-        </div>
-        <div class="cell" id="events-awards-number">
-          <span class="stat">3</span>
-          <p>Courses</p>
+          <span class="stat">4</span>
+          <p>Workshops</p>
         </div>
       </div> 
       <div class="awards-intro-button hide-for-medium-only hide-for-small-only">
@@ -227,7 +225,7 @@
                   <button class="button is-active" id="all-events-button" onclick="ChangeAllEventsFilter();">All</button>
                   <button class="button" id="events-participant-button" onclick="ChangeParticipantEventsFilter();">Participant</button>
                   <button class="button" id="events-organiser-staff-button" onclick="ChangeOrganisationEventsFilter();">Organisation/Staff</button>
-                  <button class="button" id="courses-button" onclick="ChangeCoursesFilter();">Courses</button>
+                  <button class="button" id="courses-button" onclick="ChangeCoursesFilter();">Workshops</button>
                 </div>
               </div>
             </div>
@@ -240,53 +238,287 @@
     <!-- /Awards and Events Number Section -->
 
     <!-- Awards and Courses Section -->
-    <div class="grid-container full align-center" id="awards-card">
-      <div class="grid-x grid-margin-x large-up-4 medium-up-2 small-up-1">
+    <div class="grid-container full align-center hide-for-small-only hide-for-medium-only" id="awards-card">
+      <div class="grid-x grid-margin-x large-up-3 medium-up-3 small-up-1">
         <a class="cell award-event-card" href="#" id="astronomy-olympiad">
           <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">OBA 2010</p>
+          <p class="h5 award-event-card-title">OBA 2011</p>
           <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OBMEP 2012</p>
+          <p class="h6 award-event-card-name">Honorable Mention</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="course">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">SMED (2012)</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="course">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Development of Games (2012)</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="course">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Low cost solar panels (2012)</p>
+          <p class="h6 award-event-card-name">Participant</p>
         </a>
 
         <a class="cell award-event-card" href="#" id="robotics-olympiad">
           <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">OBR 2012</p>
-          <p class="h6 award-event-card-name">Silver Medal</p>
+          <p class="h5 award-event-card-title">OBR 2013</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
         </a>
 
         <a class="cell award-event-card" href="#" id="maths-olympiad">
-          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">OBM 2012</p>
-          <p class="h6 award-event-card-name">Congress</p>
-        </a>
-
-        <a class="cell award-event-card" href="#" id="event-participant">
-          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">ENEJ 2012</p>
-          <p class="h6 award-event-card-name">Staff</p>
-        </a>
-
-        <a class="cell award-event-card" href="#" id="event-organiser-staff">
           <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">Talento 2012</p>
-          <p class="h6 award-event-card-name">Staff</p>
+          <p class="h5 award-event-card-title">OPM 2013</p>
+          <p class="h6 award-event-card-name">Silver Medal</p>
         </a>
 
-        <a class="cell award-event-card" href="#" id="course">
+        <a class="cell award-event-card" href="#" id="robotics-olympiad">
           <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">SMED</p>
+          <p class="h5 award-event-card-title">OBR 2013 (Practical)</p>
           <p class="h6 award-event-card-name">Participant</p>
         </a>
 
         <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OBMEP 2013</p>
+          <p class="h6 award-event-card-name">Honorable Mention</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">International Kangaroo 2013</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OMU 2013</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Technical work fair 2013</p>
+          <p class="h6 award-event-card-name">Exhibitor</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
           <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">OBMEP 2012</p>
-          <p class="h6 award-event-card-name">Honors</p>
+          <p class="h5 award-event-card-title">FEIMAFE 2013</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="robotics-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OBR 2014</p>
+          <p class="h6 award-event-card-name">Silver Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OBMEP 2014</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">International Kangaroo 2014</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="maths-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Integrated Games PUC 2014</p>
+          <p class="h6 award-event-card-name">Bronze Medal</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Technical work fair 2014</p>
+          <p class="h6 award-event-card-name">Exhibitor</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="course">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Inova Jovem Program 2015</p>
+          <p class="h6 award-event-card-name">Winner</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="course">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Business Model Canvas (2015)</p>
+          <p class="h6 award-event-card-name">Participant</p>
         </a>
 
         <a class="cell award-event-card" href="#" id="event-organiser-staff">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">SINP 2015</p>
+          <p class="h6 award-event-card-name">Organizing Committee</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-organiser-staff">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Talento recruitment fair 2015</p>
+          <p class="h6 award-event-card-name">Staff</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
           <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
-          <p class="h5 award-event-card-title">EPEJ2012</p>
+          <p class="h5 award-event-card-title">Uniararas Week 2015</p>
+          <p class="h6 award-event-card-name">Speaker</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">ENE 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">ISA Expo Campinas 2015</p>
+          <p class="h6 award-event-card-name">Exhibitor</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Impacto recruitment fair 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">EPEJ 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">ENEJ 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">EDL 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Automatica 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Summer Challenge 2015</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Campus Party 2016</p>
+          <p class="h6 award-event-card-name">Exhibitor</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-organiser-staff">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Talento recruitment fair 2016</p>
+          <p class="h6 award-event-card-name">Staff</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">ENE 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">ISA Expo Campinas 2016</p>
+          <p class="h6 award-event-card-name">Exhibitor</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-organiser-staff">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Impacto recruitment fair 2016</p>
+          <p class="h6 award-event-card-name">Staff</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-organiser-staff">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">EPEJ 2016</p>
+          <p class="h6 award-event-card-name">Staff</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">JEWC 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">EDL 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">FEIMAFE 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Mechanic Fair 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Automatica 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Winter Challenge 2016</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="robotics-olympiad">
+          <i class="award-event-card-icon fi fi-trophy" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">OBR 2017</p>
+          <p class="h6 award-event-card-name">Judge</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-projection-screen" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">SEBRAE's entrepreneurs fair 2017</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">Automatica 2017</p>
+          <p class="h6 award-event-card-name">Participant</p>
+        </a>
+
+        <a class="cell award-event-card" href="#" id="event-participant">
+          <i class="award-event-card-icon fi fi-torso-business" aria-hidden="true"></i>
+          <p class="h5 award-event-card-title">EDL 2017</p>
           <p class="h6 award-event-card-name">Participant</p>
         </a>
       </div>

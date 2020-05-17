@@ -101,6 +101,7 @@ $('.awards-intro-button-link').click(function(e){
   e.preventDefault();
   if ( $(".awards-intro-button-content").is(':hidden') ) {
     $('.awards-intro-button-link').find('i').removeClass('fi-arrow-down').addClass('fi-arrow-up');
+    ChangeFiltergeAllOlympiadsFilter();
   } else {
     $('.awards-intro-button-link').find('i').removeClass('fi-arrow-up').addClass('fi-arrow-down');
     ChangeAllFilter();
