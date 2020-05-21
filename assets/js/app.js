@@ -126,22 +126,22 @@ function ChangeAllFilter() {
     var courses = document.querySelectorAll('[id=course]');
 
     for(var i=0; i<astronomyOlympiad.length; i++) {
-        astronomyOlympiad[i].style.display = 'block'
+        astronomyOlympiad[i].style.display = 'none'
     }
     for(var i=0; i<roboticsOlympiad.length; i++){
-        roboticsOlympiad[i].style.display = 'block'
+        roboticsOlympiad[i].style.display = 'none'
     }
     for(var i=0; i<mathsOlympiad.length; i++){
-        mathsOlympiad[i].style.display = 'block'
+        mathsOlympiad[i].style.display = 'none'
     }
     for(var i=0; i<eventParticipant.length; i++){
-        eventParticipant[i].style.display = 'block'
+        eventParticipant[i].style.display = 'none'
     }
     for(var i=0; i<eventOrganiserStaff.length; i++){
-        eventOrganiserStaff[i].style.display = 'block'
+        eventOrganiserStaff[i].style.display = 'none'
     }
     for(var i=0; i<courses.length; i++){
-        courses[i].style.display = 'block'
+        courses[i].style.display = 'none'
     }
 }
 
