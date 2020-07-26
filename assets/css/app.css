@@ -399,6 +399,56 @@ footer a:hover, #footer-contact:hover{
 
 /* Home Page */
 /* Home Page - Photos Section */
+.intro-one-page{
+  height: 100vh;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: url("https://i.imgur.com/0EmtNfV.jpg") center center no-repeat;
+  background-size: cover;
+  padding-bottom: 10rem;
+}
+
+.intro-one-page .top-content-section {
+  width: 100%;
+}
+
+.intro-one-page .middle-content-section {
+  text-align: center;
+  color: #fefefe;
+}
+
+#intro-title{
+  margin: 1.5rem;
+}
+
+#intro-button{
+  color: black;
+  border-radius: 500px;
+  background-color: white;
+  border: 0.2rem solid white;
+  padding: 0.25rem 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+
+#intro-button:hover{
+  color: white;
+  border-radius: 500px;
+  background-color: #1779ba;
+  border: 0.2rem solid #1779ba;
+}
+
 .intro-content-section {
   background: #e6e6e6;
   display: -webkit-flex;
