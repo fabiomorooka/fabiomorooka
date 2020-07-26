@@ -110,7 +110,7 @@
 /* All Pages - Footer Section */
 footer{
   background-color: #666;
-  padding: 25px 0px;
+  padding: 5px 0px;
 }
 
 footer a{
@@ -125,10 +125,10 @@ footer a:hover, #footer-contact:hover{
 
 #footer-title{
   color: white;
+  padding-top: 1rem;
 }
 
 /* All Pages - Footer Section, general css */
-
 .my-website-footer {
   background: #2c3840;
   color: #8aa0ae;
@@ -218,7 +218,7 @@ footer a:hover, #footer-contact:hover{
 
 /* All Pages - Footer Section, Social Media round buttons */
 .rounded-social-buttons {
-  text-align: center;
+  text-align: right;
 }
 
 .rounded-social-buttons .social-button {
@@ -428,7 +428,7 @@ footer a:hover, #footer-contact:hover{
 }
 
 #intro-title{
-  margin: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 #intro-button{
@@ -1258,6 +1258,7 @@ input:checked ~ #soft-skill-switch {
 
 /* Carrer Page */
 /* Carrer Page - Intro Section */
+/*
 #carrer-award-page{
   background-color: #1779ba;
 }
@@ -1320,8 +1321,10 @@ input:checked ~ #soft-skill-switch {
   background-color: #1779ba;
   border: 0.2rem solid #1779ba;
 }
+*/
 
 /* Carrer Page - Timeline Section */
+/*
 #main-content-section{
   padding: 3rem 6rem 2rem;
   background-color: #1779ba;
@@ -1457,8 +1460,9 @@ input:checked ~ #soft-skill-switch {
     left: 0;
   }
 }
-
+*/
 /* Carrer Page - Awards and Events Numbers Section */
+/*
 #awards{
   background-color: #1779ba;
   padding: 1rem 7rem;
@@ -1488,8 +1492,9 @@ input:checked ~ #soft-skill-switch {
   display: none;
   color: white;
 }
-
+*/
 /* Carrer Page - Filter buttons */
+/*
 #awards-filter-button{
   padding: 0rem 7rem;
   background-color: #1779ba;
@@ -1524,8 +1529,9 @@ input:checked ~ #soft-skill-switch {
   background: #333;
   color: #fefefe;
 }
-
+*/
 /* Carrer Page - Awards Section */
+/*
 #awards-card{
   background-color: #1779ba;
   padding: 0rem 7rem 1rem;
@@ -1576,8 +1582,7 @@ input:checked ~ #soft-skill-switch {
   right: 1rem;
   text-align: right;
 }
-
-
+*/
 
 /* Contact Page */
 /* Contact Page - Social Media Section*/
