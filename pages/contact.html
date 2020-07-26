@@ -61,72 +61,6 @@
     <!-- /Web Header -->
     <!-- /Navigation -->
 
-    <!-- Social midia section -->
-    <div class="grid-container full" id=social-media>
-      <p class="section-title h4 text-center">My social medias</p>
-      <div class="media-object align-center stack-for-small">
-        <div class="media-object-section hide-for-small-only hide-for-medium-only">
-          <div class="thumbnail">
-            <img src="../assets/img/contact/profilePicture.jpg" alt="Profile picture social media" width="300px">
-          </div>
-        </div>
-        <div class="media-object-section text-center">
-          <div class="grid-container">
-            <div class="grid-x grid-margin-x">
-              <div class="cell">
-                <a href="https://www.facebook.com/fabio.eid.morooka" target="_blank">
-                  <button type="button" class="button expanded large social facebook hide-for-small-only">
-                    <i class="fa fa-facebook" aria-hidden="true"></i> Facebook 
-                  </button>
-                  <button type="button" class="button expanded social facebook show-for-small-only">
-                    <i class="fa fa-facebook" aria-hidden="true"></i> Facebook 
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell">
-                <a href="https://www.instagram.com/fabio.eid/" target="_blank">
-                  <button type="button" class="button expanded large social instagram hide-for-small-only">
-                    <i class="fa fa-instagram" aria-hidden="true"></i> Instagram 
-                  </button>
-                  <button type="button" class="button expanded social instagram show-for-small-only">
-                    <i class="fa fa-instagram" aria-hidden="true"></i> Instagram 
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell">
-                <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">
-                  <button type="button" class="button expanded large social linkedin hide-for-small-only">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin 
-                  </button>
-                  <button type="button" class="button expanded social linkedin show-for-small-only">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin 
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="grid-x grid-margin-x">
-              <div class="cell">
-                <a href="https://github.com/fabiomorooka" target="_blank">
-                  <button type="button" class="button expanded large social github hide-for-small-only">
-                    <i class="fa fa-github" aria-hidden="true"></i> Github 
-                  </button>
-                  <button type="button" class="button expanded social github show-for-small-only">
-                    <i class="fa fa-github" aria-hidden="true"></i> Github 
-                  </button>  
-                </a>
-              </div>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div> 
-
-    <!-- /Social midia section -->
-
     <!-- Email forms section -->
     <div class = "grid-container full" id="send-email" data-magellan-target="send-email">
       <form action="https://formspree.io/fabio.morooka@gmail.com" method="POST">
@@ -135,13 +69,31 @@
             <div class="cell">   
               <div class="send-email-form">
                 <h4 class="text-center">Leave me a message</h4>
-                <label for="send-email-form-username">Name*</label>
-                <input type="text" class="send-email-form-username" id="guest-name" autocomplete="name" required="" placeholder="">
-                <label for="send-email-form-password">Email*</label>
-                <input type="email" class="send-email-form-password" name="_replyto" id="guest-email" autocomplete="email" required="" placeholder="">
+                <h5 class="text-justify">
+                  Hello, 
+                </h5>
+                <h6 class="text-justify">
+                  You can easily send me an e-mail to <a href="mailto:fabio.morooka@gmail.com" target="_blank">my e-mail</a>. You can also send me a direct message on my <a href="https://www.facebook.com/fabio.eid.morooka/" target="_blank">facebook</a> or <a href="https://www.linkedin.com/in/fabiomorooka/" target="_blank">linkedin</a>.  
+                </h6>
+                
+                <h6 class="text-justify">
+                  Otherwise, fill in the form if you want to know more about me, or if you have any questions. I'll be happy to answer you.
+                </h6>
+                <div class="grid-margin-x grid-x large-up-2 medium-up-2 small-up-1">
+                  <div class="cell">
+                    <label for="send-email-form-username">Name*</label>
+                    <input type="text" class="send-email-form-username" id="guest-name" autocomplete="name" required="" placeholder="" value="Your name">
+                  </div>
+
+                  <div class="cell">
+                    <label for="send-email-form-password">Email*</label>
+                    <input type="email" class="send-email-form-password" name="_replyto" id="guest-email" autocomplete="email" required="" placeholder="" value="Your e-mail">
+                  </div>
+                </div>
+                
                 <div class="cell large-8 medium-10 small-10">
                   <label for="send-email-form-password">Message*</label>
-                  <textarea name="message" rows="7" class="send-email-form-message" type="text" id="guest-message" placeholder="None" autocomplete="message" required=""></textarea>
+                  <textarea name="message" rows="5" class="send-email-form-message" type="text" id="guest-message" placeholder="None" autocomplete="message" required="">Click here to start writing your message...</textarea>
                 </div>
                 <button type="submit" class="alert send-email-form-button">Send e-mail</button>
               </div>
@@ -156,41 +108,25 @@
     <!-- Footer -->
     <footer id="final-footer">
       <div class="grid-container">
-        <div class="grid-x grid-margin-x small-up-1 large-up-2 align-justify">
-          <div class="text-center align-self-middle" id="footer-title">
-            <div class="grid-x grid-margin-x large-up-2 medium-up-2 small-up-2">
-              <div class="my-website-footer-block">
-                <i class="fi-telephone" aria-hidden="true"></i>
-                <p id="footer-contact">+33 (0)7 69 53 71 25</p>
-              </div>
-              <div class="my-website-footer-block">
-                <i class="fi-mail" aria-hidden="true"></i>
-                <p id="footer-contact">fabio.morooka@gmail.com</p>
-              </div>
+        <div class="grid-x grid-margin-x align-center">
+          <div class="my-website-footer-block">
+            <div class="rounded-social-buttons">
+              <a class="social-button" href="https://www.facebook.com/fabio.eid.morooka" target="_blank"><i class="fi-social-facebook"></i></a>
             </div>
           </div>
-          <div class="align-self-middle">
-            <div class="grid-x grid-margin-x large-up-2 medium-up-2 small-up-2">
-              <div class="my-website-footer-block">
-                <div class="rounded-social-buttons">
-                  <a class="social-button" href="https://www.facebook.com/fabio.eid.morooka" target="_blank"><i class="fi-social-facebook"></i></a>
-                </div>
-              </div>
-              <div class="my-website-footer-block">
-                <div class="rounded-social-buttons">
-                  <a class="social-button" href="https://www.linkedin.com/in/fabiomorooka/" target="_blank"><i class="fi-social-linkedin"></i></a>
-                </div>  
-              </div>
-              <div class="my-website-footer-block">
-                <div class="rounded-social-buttons">
-                  <a class="social-button" href="https://www.instagram.com/fabio.eid/" target="_blank"><i class="fi-social-instagram"></i></a>
-                </div>
-              </div>
-              <div class="my-website-footer-block">
-                <div class="rounded-social-buttons">
-                  <a class="social-button" href="https://github.com/fabiomorooka" target="_blank"><i class="fi-social-github"></i></a>
-                </div>
-              </div>
+          <div class="my-website-footer-block">
+            <div class="rounded-social-buttons">
+              <a class="social-button" href="https://www.linkedin.com/in/fabiomorooka/" target="_blank"><i class="fi-social-linkedin"></i></a>
+            </div>  
+          </div>
+          <div class="my-website-footer-block">
+            <div class="rounded-social-buttons">
+              <a class="social-button" href="https://www.instagram.com/fabio.eid/" target="_blank"><i class="fi-social-instagram"></i></a>
+            </div>
+          </div>
+          <div class="my-website-footer-block">
+            <div class="rounded-social-buttons">
+              <a class="social-button" href="https://github.com/fabiomorooka" target="_blank"><i class="fi-social-github"></i></a>
             </div>
           </div>
         </div>

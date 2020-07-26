@@ -27,14 +27,13 @@
 .menu-fixe{
   background-color: rgba(33, 47, 61); 
   z-index: 1;
-  padding: 0.75rem 1.25rem;
   font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .menu-drop{
   background-color: inherit;
   z-index: 1;
-  padding: 0.75rem 1.25rem;
   font-weight: bold;
 }
 
@@ -63,6 +62,7 @@
   top: 0;
   bottom: 0;
   font-weight: bold;
+  font-size: 0.85rem;
 }
 
 .menu-scroll a{
@@ -123,16 +123,16 @@ footer a:hover, #footer-contact:hover{
   transition: 0.4s ease ; 
 }
 
-#footer-title{
-  color: white;
-  padding-top: 1rem;
+#final-footer{
+  align-items: center;
+  margin: 0;
 }
 
 /* All Pages - Footer Section, general css */
 .my-website-footer {
   background: #2c3840;
   color: #8aa0ae;
-  padding: 2rem 0 0;
+  padding: 2rem 0rem 0rem;
 }
 
 .my-website-footer .my-website-footer-menu-social a {
@@ -219,6 +219,7 @@ footer a:hover, #footer-contact:hover{
 /* All Pages - Footer Section, Social Media round buttons */
 .rounded-social-buttons {
   text-align: right;
+  margin: -1rem -0.5rem;
 }
 
 .rounded-social-buttons .social-button {
@@ -317,6 +318,7 @@ footer a:hover, #footer-contact:hover{
   padding: 15px 0px;
   margin-right: 0px;
   margin-left: 0px;
+  font-size: 0.7rem;
 }
 
 /* Social Media round buttons that are not used, but may be used in the future */
@@ -961,7 +963,7 @@ footer a:hover, #footer-contact:hover{
 /* Projects Page - General Information Section */
 .project-intro {
   text-align: center;
-  padding: 2rem 3rem;
+  padding: 2rem 3rem 0rem;
 }
 
 .project-intro .fi {
@@ -971,7 +973,7 @@ footer a:hover, #footer-contact:hover{
 }
 
 .project-intro-headline {
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
 
@@ -1550,11 +1552,11 @@ input:checked ~ #soft-skill-switch {
 .section-title{
   color: black;
   margin: 1rem 0rem 2rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 #send-email{
-  padding: 5rem 0rem;
+  padding: 0rem;
   background-color: #fefefe; 
 }
 
@@ -1566,15 +1568,14 @@ input:checked ~ #soft-skill-switch {
 
 .send-email-form h4 {
   color: black;
-  margin-bottom: 1rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .send-email-form label {
   color: black;
   letter-spacing: 1px;
-  font-weight: 900;
-  margin-bottom: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
 }
 
 .send-email-form input {
@@ -1610,6 +1611,10 @@ input:checked ~ #soft-skill-switch {
   border: none;
   opacity: .75;
   transition: all ease .4s;
+  min-height: 125px;
+  max-height: 127px;
+  min-width: 1120px;
+  max-width: 1121px; 
 }
 
 .send-email-form-button {
@@ -1620,7 +1625,7 @@ input:checked ~ #soft-skill-switch {
   text-transform: uppercase;
   letter-spacing: 1px;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   transition: all ease .6s;
 }
 

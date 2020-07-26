@@ -18,7 +18,7 @@ function ChangeFilter() {
     var programmingSkills = document.querySelectorAll('[id=programming]');
     var mechatronicsSkills = document.querySelectorAll('[id=mechatronics]');
     var embeddedSystemsSkills = document.querySelectorAll('[id=embedded-systems]');
-    var softSkillSkills = document.querySelectorAll('[id=soft-skill]');
+    var softSkillSkills = document.querySelectorAll('[id=entrepreneurship]');
 
     if(document.getElementById("programming-checkbox").checked){
 
@@ -65,7 +65,7 @@ function ChangeFilter() {
         }
     }
 
-    if(document.getElementById("soft-skill-checkbox").checked){
+    if(document.getElementById("entrepreneurship-checkbox").checked){
         for(var i=0; i<programmingSkills.length; i++) {
             programmingSkills[i].style.display = 'none'
         }
