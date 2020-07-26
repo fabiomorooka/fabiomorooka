@@ -50,7 +50,7 @@
                 <li><a href="projects.html#mechatronics-section">Mechatronics</a></li>
               </ul>
             </li>
-            <li><a href="skills.html">Skills</a></li>
+            <!--<li><a href="skills.html">Skills</a></li>-->
             <!--<li><a href="carrer.html">Carrer</a></li>-->
             <!-- <li><a href="#">Blog</a></li> -->
             <li><a id="contact-button" href="contact.html">Contact</a></li>
@@ -107,678 +107,192 @@
     </div>
     <!-- Projects Area Section -->
 
-    <!-- Programming Projects Section-->
-    <div class="callout success" id="programming-section" data-magellan-target="programming-section">
-      <article class="grid-container">
-        <div class="project-type-title">
-          <p class="h2">Programming</p>
-          <p class="h5">These are the main projects I have done. I have learned and improved my programming skills, learned more about continous delivery (CD) and continous integration(CI), using CD/CI tools such as Jenkins, Sonarqube, Github and Gitlab, Docker, Ansible, among others.</p>
+    <hr>
+      <div class="grid-container">
+        <div class="grid-margin-x grid-x large-up-5 medium-up-5 small-up-3">
+          <div class="cell text-center">
+            <p class="h6">All Skills</p>
+            <div class="switch">
+              <input class="switch-input" id="all-checkbox" type="radio" checked name="skills-filter-button" onclick="ChangeFilter();">
+              <label class="switch-paddle" for="all-checkbox" id="all-switch">
+                <span class="show-for-sr">all-checkbox</span>
+                <span class="switch-active" aria-hidden="true">Yes</span>
+                <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cell text-center">
+           <p class="h6">Programming (Prog)</p>
+           <div class="switch">
+              <input class="switch-input" id="programming-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
+              <label class="switch-paddle" for="programming-checkbox" id="programming-switch">
+                <span class="show-for-sr">programming-checkbox</span>
+                <span class="switch-active" aria-hidden="true">Yes</span>
+                <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cell text-center">
+            <p class="h6">Mechatronics (Meca)</p>
+            <div class="switch">
+              <input class="switch-input" id="mechatronics-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
+              <label class="switch-paddle" for="mechatronics-checkbox" id="mechatronics-switch">
+                <span class="show-for-sr">mechatronics-checkbox</span>
+                <span class="switch-active" aria-hidden="true">Yes</span>
+                <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cell text-center">
+            <p class="h6">Embedded Systems (ES)</p>
+            <div class="switch">
+              <input class="switch-input" id="embedded-systems-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
+              <label class="switch-paddle" for="embedded-systems-checkbox" id="embedded-systems-switch">
+                <span class="show-for-sr">embedded-systems-checkbox</span>
+                <span class="switch-active" aria-hidden="true">Yes</span>
+                <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="cell text-center">
+            <p class="h6">Soft Skill (SS)</p>
+            <div class="switch">
+              <input class="switch-input" id="soft-skill-checkbox" type="radio" name="skills-filter-button" onclick="ChangeFilter();">
+              <label class="switch-paddle" for="soft-skill-checkbox" id="soft-skill-switch">
+                <span class="show-for-sr">soft-skill-checkbox</span>
+                <span class="switch-active" aria-hidden="true">Yes</span>
+                <span class="switch-inactive" aria-hidden="true">No</span>
+              </label>
+            </div>
+          </div>
         </div>
-      </article>
-    </div>
-    <article class="grid-container" id="projects-cards-list">
-      <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-4">
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>My website</span>
+      </div>
+    <hr>
+
+    <!-- Skill cards -->
+    <div class="grid-container" id="projects-box"> 
+      <div class="grid-x grid-margin-x large-up-4 medium-up-2 small-up-1">
+
+        <div class="cell" id="soft-skill" style="display: block">
+          <div class="project-card primary">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                SS
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">My website</h3>
-                <p class="flip-card-inner-back-text">The project of my website consist on making my own website and blog</p>
-                <button class="button round success" data-open="website-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4"> Presentation </p>
+              <p class="h6">In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Learning DASK</span>
+        <div class="cell" id="programming" style="display: block">
+          <div class="project-card success">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                Prog
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Learning DASK</h3>
-                <p class="flip-card-inner-back-text">Deep understanding of DASK in the field of radioastronomy. </p>
-                <button class="button round success" data-open="dask-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4">Programming</p>
+              <p class="h6">A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Letter Identification</span>
+        <div class="cell" id="mechatronics" style="display: block">
+          <div class="project-card alert">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                Meca
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Letter Identification</h3>
-                <p class="flip-card-inner-back-text">Identifying handwritten letters by using machine learning methods.</p>
-                <button class="button round success" data-open="letter-identification-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4">Mechatronics</p>
+              <p class="h6">After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Dice Identification</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Dice Identification</h3>
-                <p class="flip-card-inner-back-text">Dice image face number recognition by using machine learning methods. </p>
-                <button class="button round success" data-open="dice-identification-card" id="button-project-details">Read More</button>
+        <div class="cell" id="embedded-systems" style="display: block">
+          <div class="project-card warning">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                ES
               </div>
             </div>
-          </div>
-        </div>
-      </div> 
-    </article>
-    <!-- /Programming Projects Section-->
-
-    <!-- Programming Projects cards -->
-    <div class="reveal large" id="website-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Website Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="dask-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Dask study project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="letter-identification-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Letter Identification Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="dice-identification-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Dice face Identification Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-
-    <!-- /Programming Projects cards -->
-
-    <!-- Embedded Systems Projects Section-->
-    <div class="callout warning" id="embedded-systems-section" data-magellan-target="embedded-systems-section">
-      <article class="grid-container">
-        <div class="project-type-title">
-          <p class="h2">Embedded Systems</p>
-          <p class="h5">The projects were done mainly in the courses where I learned more about embedded systems. Develop these projects was an oppotunity to learn in practice more about embedded systems.</p>
-        </div>
-      </article>
-    </div>
-    <article class="grid-container" id="projects-cards-list">
-      <div class="grid-x grid-margin-x small-up-1 medium-up-3 large-up-3">
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Timer 8254</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Timer 8254</h3>
-                <p class="flip-card-inner-back-text">Building a timer 8254</p>
-                <button class="button round success" data-open="timer8254-card" id="button-project-details">Read More</button>
-              </div>
+            <div class="project-card-content">
+              <p class="h4">Embedded-Systems</p>
+              <p class="h6">In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Neural Network</span>
+       
+        <div class="cell" id="soft-skill" style="display: block">
+          <div class="project-card primary">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                SS
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Neural Network</h3>
-                <p class="flip-card-inner-back-text">Modeling a neural network in VHDL.</p>
-                <button class="button round success" data-open="neural-network-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4"> Soft Skill</p>
+              <p class="h6">In a post-apocalyptic world, in which people fight to the death, Max teams up with a mysterious woman, Furiousa, to try and survive.</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Lig4 board game</span>
+        <div class="cell" id="programming" style="display: block">
+          <div class="project-card success">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                Prog
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Lig4 board game</h3>
-                <p class="flip-card-inner-back-text">Building an interactive game using VHDL.</p>
-                <button class="button round success" data-open="lig4-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4">Programming</p>
+              <p class="h6">A continuation of the saga created by George Lucas set thirty years after Star Wars: Episode VI - Return of the Jedi.</p>
             </div>
           </div>
         </div>
 
-      </div> 
-    </article>
-    <!-- /Embedded Systems Projects Section-->
-
-    <!-- Embedded Systems Projects cards -->
-    <div class="reveal large" id="timer8254-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Timer 8254 Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="neural-network-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Neural Network Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="lig4-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Lig4 Board Game</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-
-    <!-- /Embedded Systems Projects cards -->
-
-    <!-- Entrepenership Projects Section-->
-    <div class="callout primary" id="entrepreneurship-section" data-magellan-target="entrepreneurship-section">
-      <article class="grid-container">
-        <div class="project-type-title">
-          <p class="h2">Entrepreneurship</p>
-          <p class="h5">These projects were developped in multidisciplinary teams. By developping these projects I had an opportunity to develop my soft skills and learn more about entrepreneurship.</p>
-        </div>
-      </article>
-    </div>
-    <article class="grid-container" id="projects-cards-list">
-      <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-2">
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Auto cleanning mirror</span>
+        <div class="cell" id="mechatronics" style="display: block">
+          <div class="project-card alert">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                Meca
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Auto cleanning mirror</h3>
-                <p class="flip-card-inner-back-text">A winner innovation project.</p>
-                <button class="button round success" data-open="inova-auto-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4">Mechatronics</p>
+              <p class="h6">After finding himself in a new time-line, Kyle Reese teams up with John Connor's mother Sarah and an aging terminator to try and stop the one thing that the future fears, "Judgement Day".</p>
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Warm shirt</span>
+        <div class="cell" id="embedded-systems" style="display: block">
+          <div class="project-card warning">
+            <div class="project-card-label">
+              <div class="project-card-label-text">
+                ES
               </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Warm shirt</h3>
-                <p class="flip-card-inner-back-text">A winner innovation project.</p>
-                <button class="button round success" data-open="shirt-card" id="button-project-details">Read More</button>
-              </div>
+            </div>
+            <div class="project-card-content">
+              <p class="h4">Embedded-Systems</p>
+              <p class="h6">In the near future, crime is patrolled by a mechanized police force. When one police droid, Chappie, is stolen and given new programming, he becomes the first robot with the ability to think and feel for himself.</p>
             </div>
           </div>
         </div>
-      </div> 
-    </article>
-    <!-- /Entrepenership Projects Section-->
-
-    <!-- Entrepenership Projects cards -->
-    <div class="reveal large" id="inova-auto-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p class="h1">Auto cleanning mirror</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
+        
       </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
     </div>
-
-    <div class="reveal large" id="shirt-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p class="h1">Shirt</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-
-    <!-- /Entrepenership Projects cards -->
-
-    <!-- Mechatronics Projects Section-->
-    <div class="callout alert" id="mechatronics-section" data-magellan-target="mechatronics-section">
-      <article class="grid-container">
-        <div class="project-type-title">
-          <p class="h2">Mechatronics</p>
-          <p class="h5">.</p>
-        </div>
-      </article>
-    </div>
-    <article class="grid-container" id="projects-cards-list">
-      <div class="grid-x grid-margin-x small-up-1 medium-up-3 large-up-3">
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Finger Prostheses</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Finger Prostheses</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="finger-prostheses-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Autonomous car</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Autonomous car</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="autonomous-car-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Vibration on motorcycles</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Vibration on motorcycles</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="motorcycle-vibration-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Automous golf car model</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Automous golf car model</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="golf-car-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Riser laboratory plan</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Riser laboratory plan</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="labriser-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="cell">
-          <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
-            <div class="flip-card-inner">
-              <div class="flip-card-inner-front">
-                <span>Motor-reducer support model</span>
-              </div>
-              <div class="flip-card-inner-back">
-                <h3 class="flip-card-inner-back-title">Motor-reducer support model</h3>
-                <p class="flip-card-inner-back-text">Project Description</p>
-                <button class="button round success" data-open="motor-reducer-card" id="button-project-details">Read More</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-    </article>
-    <!-- /Mechatronics Projects Section-->
-
-    <!-- Mechatronics Projects cards -->
-    <div class="reveal large" id="finger-prostheses-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Finger Prostheses Project</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="autonomous-car-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Autonomous Car</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="motorcycle-vibration-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Motorcycle vibration study</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="golf-car-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Golf car model</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="labriser-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Riser laboratory model</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <div class="reveal large" id="motor-reducer-card" data-reveal data-close-on-esc="true" data-v-offset="50" data-animation-in ="fade-in" data-animation-out="fade-out">
-      <p>Motor-reducer support model</p>
-      <p class="lead">Your couch. It is mine.</p>
-      <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>  
-      <div class="project-card-block grid-x grid-margin-x ">
-        <div class="cell large-5">
-          <img class="project-card-block-image" src="https://placehold.it/600x400"/>
-        </div>
-        <div class="cell medium-12 large-7">
-          <h2 class="project-card-block-header">Project Description</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sodales diam ac hendrerit aliquet. Phasellus pretium libero vel molestie maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis est quam. Aenean blandit a urna laoreet tincidunt.</p>
-          <h2>Project Details</h2>
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-          </ul>
-        </div>
-      </div>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-
-    <!-- /Mechatronics Projects cards -->
+    <!-- /Skill cards -->
     
     <!-- Footer -->
     <footer id="final-footer">

@@ -959,19 +959,6 @@ footer a:hover, #footer-contact:hover{
 
 /* Projects Page */
 /* Projects Page - General Information Section */
-#programming-section{
-  padding: 5rem 7rem 2.5rem;
-}
-#embedded-systems-section{
-  padding: 5rem 7rem 2.5rem;
-}
-#entrepreneurship-section{
-  padding: 5rem 7rem 2.5rem;
-}
-#mechatronics-section{
-  padding: 5rem 7rem 2.5rem;
-}
-
 .project-intro {
   text-align: center;
   padding: 2rem 3rem;
@@ -1014,125 +1001,8 @@ footer a:hover, #footer-contact:hover{
   text-align: justify;
   padding: 0rem 0rem;
 }
-/* Projects Page - Flip cards */
-.flip-card {
-  -webkit-perspective: 1000;
-          perspective: 1000;
-  border: 0;
-  background: transparent;
-}
 
-.flip-card:hover .flip-card-inner,
-.flip-card.hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-.flip-card,
-.flip-card-inner-front,
-.flip-card-inner-back {
-  width: 100%;
-  height: 20rem;
-}
-
-.flip-card-inner {
-  transition: 0.6s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  position: relative;
-  -webkit-backface-visibility: visible;
-          backface-visibility: visible;
-}
-
-.flip-card-inner-front,
-.flip-card-inner-back {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.flip-card-inner-front {
-  background: url(https://images.pexels.com/photos/179124/pexels-photo-179124.jpeg?w=940&h=650&auto=compress&cs=tinysrg) 0 0 no-repeat;
-  z-index: 2;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.flip-card-inner-front span {
-  width: 100%;
-  text-align: center;
-  background: rgba(254, 254, 254, 0.8);
-  padding: 0.25rem 0;
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.flip-card-inner-back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  background: #cacaca;
-  padding: 1rem;
-}
-
-.flip-card-inner-back-title {
-  font-weight: bold;
-}
-
-.flip-card-inner-back-text {
-  line-height: 1.3;
-}
-
-#button-project-details{
-  padding: 0.75rem 1rem;
-  border-radius: 5000px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  font-size: 13px;
-  color:white;
-}
-
-/* Projects Page - Project cards */
-#projects-cards-list{
-  padding: 1rem 3rem;
-}
-
-.project-card-block {
-  padding: 10px 0;
-  border-top: 1px solid #cacaca;
-  border-bottom: 1px solid #cacaca;
-}
-
-.project-card-block-image {
-  display: block;
-  margin: auto;
-  padding: 10px 0;
-}
-
-
-/* Skills Page */
-/* Skills Page - Filter button */
+/* Project Page - Filter button */
 .switch-paddle{
   border-radius: 5px;
 }
@@ -1152,13 +1022,13 @@ input:checked ~ #embedded-systems-switch {
 input:checked ~ #soft-skill-switch {
     background: #1779ba; }
 
-/* Skills Page - Skill cards */
+/* Project Page - Skill cards */
 
-#skills-box{
+#projects-box{
   padding: 0.5rem 3rem;
 }
 
-.skill-card {
+.project-card {
   background: #fefefe;
   border: 1px solid #8a8a8a;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -1167,66 +1037,66 @@ input:checked ~ #soft-skill-switch {
   border-radius: 0;
 }
 
-.skill-card .skill-card-label {
+.project-card .project-card-label {
   border-color: transparent #8a8a8a transparent transparent;
   border-color: rgba(255, 255, 255, 0) #8a8a8a rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.primary {
+.project-card.primary {
   border-color: #1779ba;
 }
 
-.skill-card.primary .skill-card-label {
+.project-card.primary .project-card-label {
   border-color: transparent #1779ba transparent transparent;
   border-color: rgba(255, 255, 255, 0) #1779ba rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.secondary {
+.project-card.secondary {
   border-color: #767676;
 }
 
-.skill-card.secondary .skill-card-label {
+.project-card.secondary .project-card-label {
   border-color: transparent #767676 transparent transparent;
   border-color: rgba(255, 255, 255, 0) #767676 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.info {
+.project-card.info {
   border-color: #37a0e6;
 }
 
-.skill-card.info .skill-card-label {
+.project-card.info .project-card-label {
   border-color: transparent #37a0e6 transparent transparent;
   border-color: rgba(255, 255, 255, 0) #37a0e6 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.alert {
+.project-card.alert {
   border-color: #cc4b37;
 }
 
-.skill-card.alert .skill-card-label {
+.project-card.alert .project-card-label {
   border-color: transparent #cc4b37 transparent transparent;
   border-color: rgba(255, 255, 255, 0) #cc4b37 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.success {
+.project-card.success {
   border-color: #3adb76;
 }
 
-.skill-card.success .skill-card-label {
+.project-card.success .project-card-label {
   border-color: transparent #3adb76 transparent transparent;
   border-color: rgba(255, 255, 255, 0) #3adb76 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card.warning {
+.project-card.warning {
   border-color: #ffae00;
 }
 
-.skill-card.warning .skill-card-label {
+.project-card.warning .project-card-label {
   border-color: transparent #ffae00 transparent transparent;
   border-color: rgba(255, 255, 255, 0) #ffae00 rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
 }
 
-.skill-card .skill-card-label {
+.project-card .project-card-label {
   border-style: solid;
   border-width: 0 4.375rem 2.5rem 0;
   float: right;
@@ -1237,11 +1107,11 @@ input:checked ~ #soft-skill-switch {
           transform: rotate(360deg);
 }
 
-.skill-card .skill-card-content {
+.project-card .project-card-content {
   padding: 0.5rem 1.5rem 0.875rem;
 }
 
-.skill-card .skill-card-label-text {
+.project-card .project-card-label-text {
   color: #fefefe;
   font-size: 0.75rem;
   font-weight: bold;
