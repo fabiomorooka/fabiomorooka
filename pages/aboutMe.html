@@ -41,15 +41,7 @@
                 <li><a href="education.html#university-france-section">Double Degree</a></li>
               </ul>
             </li>
-            <li>
-              <a href="projects.html">Projects</a>
-              <ul class="nested vertical menu" id="menu-drop" >
-                <li><a href="projects.html#programming-section">Programming</a></li>
-                <li><a href="projects.html#embedded-systems-section">Embedded Systems</a></li>
-                <li><a href="projects.html#entrepreneurship-section">Entrepreneurship</a></li>
-                <li><a href="projects.html#mechatronics-section">Mechatronics</a></li>
-              </ul>
-            </li>
+            <li><a href="projects.html">Projects</a></li>
             <!--<li><a href="skills.html">Skills</a></li>-->
             <!--<li><a href="carrer.html">Carrer</a></li>-->
             <!-- <li><a href="#">Blog</a></li> -->
@@ -64,11 +56,13 @@
     <!-- Profile Section -->
     <header class="profile-section-header hide-for-medium-only hide-for-small-only">
       <img class="profile-section-header-logo" src="../assets/img/aboutMe/profilePictureCircle.png" width="200px" />
-      <p class="h2" id="profile-title">My Profile</p>
+      <p class="h3" id="profile-title">My Profile</p>
       <ul class="profile-section-header-description menu-hover-lines" data-magellan data-offset="75" data-animation-easing="swing" data-animation-duration="750">
-        <li><a href="../assets/files/aboutMe/[EN] CV_Morooka_FabioEid.pdf">Download my curriculum</a></li>
+        <li><a href="../assets/files/aboutMe/[EN] CV_Morooka_FabioEid.pdf">See my curriculum</a></li>
         <li><a href="#discover-section">Discover who I am</a></li>
+      <!--
         <li><a href="#testimonials-section">What people talk about me</a></li>
+      -->
       </ul>
       <ul class="profile-section-header-menu" id="download-cv" testimonials-section="download-cv">
         <li><a class="button alert" href="../assets/files/aboutMe/[EN] CV_Morooka_FabioEid.pdf" download target="_blank">English</a></li>
@@ -87,9 +81,11 @@
         <div class="cell shrink" id="small-medium-portfolio-menu">
           <li><a href="#discover-section">Discover who I am</a></li>
         </div>
+      <!--
         <div class="cell shrink" id="small-medium-portfolio-menu">
           <li><a href="#testimonials-section">What people talk about me</a></li>
         </div>
+      -->
       </ul>
       <ul class="profile-section-header-menu">
         <li><a class="button alert" href="../assets/files/aboutMe/[EN] CV_Morooka_FabioEid.pdf" download target="_blank">English</a></li>
@@ -104,53 +100,89 @@
     <div class="grid-container full" id="discover-section" data-magellan-target="discover-section">
       <div class="life-section">
         <div class="life-section-inner">
-          <a href="#">
-            <article class="life">
-              <div class="life-img">
-                <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
-              </div>
-              <div class="life-content" id="resume-life-box-right">
-                <h1 class="life-content-header">HOW SPENDING $162,301.42 ON CLOTHES MADE ME $692,500</h1>
+          <article class="life">
+            <div class="life-img">
+              <a href="https://atos.net/fr/" target="_blank">
+                <img src="../assets/img/aboutMe/logo_atos.jpg" alt="logo from atos integration"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-right">
+              <h1 class="life-content-header">Internship at Atos Integration</h1>
 
-                <p class="life-content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quia sit ullam, assumenda et. est at. Minima cum enim, vero eligendi perspiciatis similique modi voluptatem officia fugiat.</p>
+              <p class="life-content-description">For my end of studies project of INSA Rennes I made an internship at Atos Integration in Rennes. I developped a chatbot that has the objective to manage and facilitate the use of a chain of continuous integration/continous delivery.</p>
+              <p class="life-content-description"><b>Key words</b>: NLP, Chatbot, DevOps, Kubernetes, Ansible, CI/CD chain</p>
+            </div>
+          </article>
 
-                <p class="life-content-author">By Yeti</p>
-                <time class="life-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
-              </div>
-            </article>
-          </a>
+          <article class="life life-reversed">
+            <div class="life-img">
+              <a href="https://www.centralesupelec.fr/en/signals-and-systems-laboratory-umr-8506" target="_blank">
+                <img src="../assets/img/aboutMe/logo_cs.jpg" alt="logo of centrale supelec"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-left">
+              <h1 class="life-content-header">Internship at Centrale Supélec</h1>
 
-          <a href="#">
-            <article class="life life-reversed">
-              <div class="life-img">
-                <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
-              </div>
-              <div class="life-content" id="resume-life-box-left">
-                <h1 class="life-content-header">HOW TO QUIT YOUR JOB, MOVE TO PARADISE AND GET PAID TO CHANGE THE WORLD</h1>
+              <p class="life-content-description">For my first internship in France, I studied about deconvolution algorithms for the SKA France radioastronomy project in the Laboratory of Signal and Systems at Centrale Supélec. Moreover I had the opportunity to studied their behaviour in a HPC structure.</p>
+              <p class="life-content-description"><b>Key words</b>: Python, DASK, Parallelism, HPC, Deconvolution</p>
+            </div>
+          </article>
 
-                <p class="life-content-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusamus sint quas, odit, enim architecto officiis culpa!</p>
+          <article class="life">
+            <div class="life-img">
+              <a href="https://www.insa-rennes.fr/" target="_blank">
+                <img src="../assets/img/aboutMe/logo_insa.jpg" alt="logo insa rennes"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-right">
+              <h1 class="life-content-header">Double degree at INSA Rennes</h1>
 
-                <p class="life-content-author">By Yeti</p>
-                <time class="life-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
-              </div>
-            </article>
-          </a>
+              <p class="life-content-description">In august 2018 I had the opportunity to come to France to make a dual degree program at INSA Rennes. From 2018 to 2020 I made the specialization of Electronics and Informatics Engineering.</p>
+              <p class="life-content-description"><b>Key words</b>: France, Embedded Systems, Image Analysis, Computer Vision</p>
+            </div>
+          </article>
 
-          <a href="#">
-            <article class="life">
-              <div class="life-img">
-                <img src="https://placehold.it/200" alt="picture of a whale eating a donkey" />
-              </div>
-              <div class="life-content" id="resume-life-box-right">
-                <h1 class="life-content-header">HOW I’M GOING TO LOSE ALL MY CUSTOMERS AND WRECK MY BUSINESS</h1>
+          <article class="life life-reversed">
+            <div class="life-img">
+              <a href="https://www.stone.com.br/" target="_blank">
+                <img src="../assets/img/aboutMe/logo_stone.jpg" alt="logo of stone payments"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-left">
+              <h1 class="life-content-header">Risk Analyst at Stone Payments</h1>
 
-                <p class="life-content-description">Lorem ipsum dolor sit amet, consectetur cupiditate, unde libero quisquam ipsam debitis earum omnis aperiam nulla eaque vitae error optio tempora voluptatem, quae impedit laborum placeat. Expedita!</p>
+              <p class="life-content-description">In the middle of my studies at Unicamp, I decided to start working. My first job was at Stone Payments in the Chargeback team. There I was responsable for giving suport for the chargeback team by developping tools and to automatize some process.</p>
+              <p class="life-content-description"><b>Key words</b>: Python, VBA, C#, SQL, Chargebak, Risk</p>
+            </div>
+          </article>
 
-                <p class="life-content-author">By Yeti</p>
-                <time class="life-content-time" datetime="2008-02-14 20:00">July 14th 2021</time>
-              </div>
-            </article>
-          </a>
+          <article class="life">
+            <div class="life-img">
+              <a href="https://www.unicamp.br/unicamp/" target="_blank">
+                <img src="../assets/img/aboutMe/logo_unicamp.jpg" alt="logo insa rennes"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-right">
+              <h1 class="life-content-header">University of Campinas (UNICAMP)</h1>
+
+              <p class="life-content-description">In 2015 I started my engineer studies at Unicamp. I decided to follow the control and automation engineer course.</p>
+              <p class="life-content-description"><b>Key words</b>: Electronics, Informatics, Mechanics, Robotic.</p>
+            </div>
+          </article>
+
+          <article class="life life-reversed">
+            <div class="life-img">
+              <a href="https://cotuca.unicamp.br/cotuca/" target="_blank">
+                <img src="../assets/img/aboutMe/logo_cotuca.jpg" alt="logo cotuca"/>
+              </a>
+            </div>
+            <div class="life-content" id="resume-life-box-left">
+              <h1 class="life-content-header">Technical High School of Campinas (Cotuca)</h1>
+
+              <p class="life-content-description">I decided to make a technical school to learn more about a field that I have always liked: mechatronics. So, from 2012 to 2014 I made a technical course and high school courses at the technical high school of Campinas, this school is attached to the university of Campinas (UNICAMP)</p>
+              <p class="life-content-description"><b>Key words</b>: Autonomous Car, Mechanics, Eletronics, Informatics</p>
+            </div>
+          </article>
 
         </div>
       </div>

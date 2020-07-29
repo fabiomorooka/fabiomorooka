@@ -439,7 +439,7 @@ footer a:hover, #footer-contact:hover{
   background-color: white;
   border: 0.2rem solid white;
   padding: 0.25rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0.5rem;
 }
@@ -945,14 +945,14 @@ footer a:hover, #footer-contact:hover{
 /* Education Page */
 /* Education Page - General CSS*/
 #high-school-section{
-  padding: 5rem 0rem 2.5rem;
+  padding: 1rem 0rem 1rem;
 }
 #university-section{
-  padding: 5rem 0rem 2.5rem;
+  padding: 1rem 0rem 1rem;
 }
 
 #university-france-section{
-  padding: 5rem 0rem 2.5rem;
+  padding: 1rem 0rem 1rem;
 }
 
 #education-information-block{
