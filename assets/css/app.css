@@ -750,6 +750,12 @@ footer a:hover, #footer-contact:hover{
           justify-content: center;
 }
 
+.life-section-title{
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
 .life-section-inner {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
@@ -957,6 +963,7 @@ footer a:hover, #footer-contact:hover{
 
 #education-information-block{
   padding: 1rem 3rem 2rem;
+  max-width: 100rem;
 }
 
 /* Projects Page */
@@ -964,6 +971,18 @@ footer a:hover, #footer-contact:hover{
 .project-intro {
   text-align: center;
   padding: 2rem 3rem 0rem;
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.project-hr {
+  text-align: center;
+  padding: 1rem;
+  margin: 0rem;
+  max-width: 100rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .project-intro .fi {
@@ -1028,6 +1047,7 @@ input:checked ~ #soft-skill-switch {
 
 #projects-box{
   padding: 0.5rem 3rem;
+  max-width: 100rem;
 }
 
 .project-card {
@@ -1557,7 +1577,7 @@ input:checked ~ #soft-skill-switch {
 
 #send-email{
   padding: 0rem;
-  background-color: #fefefe; 
+  background-color: #fefefe;
 }
 
 .send-email-form {
